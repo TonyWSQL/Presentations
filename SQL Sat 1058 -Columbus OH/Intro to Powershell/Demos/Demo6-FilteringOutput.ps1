@@ -30,8 +30,8 @@ Clear-Host
 #endregion
 
 #region Select-Object
-    Get-DbaRegisteredServer |
+     Get-DbaRegisteredServer |
         Test-DbaBuild -Latest |
         Where-Object -FilterScript {$_.Compliant -EQ $false} |
-        Select SqlInstance, Compliant, Build, BuildTarget        
+        Select-Object SqlInstance, Compliant, Build, Build*      
 #endregion

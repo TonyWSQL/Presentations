@@ -7,7 +7,7 @@
     $instanceString = 'INLAP-WKS1100\SQL2022'
     $instanceString
 #endregion
-
+Import-Module dbatools  
 #region Typed
     Clear-Host
     [datetime]$dateDT = '04/15/2023 10:45'

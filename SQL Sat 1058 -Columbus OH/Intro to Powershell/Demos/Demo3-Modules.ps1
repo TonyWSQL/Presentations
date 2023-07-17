@@ -12,7 +12,7 @@ Clear-Host # clears the screen
     Uninstall-Module -Name dbatools 
     Update-Module -Name dbatools  
 
-    Find-Module -Name dbatools 
+    Find-Module -Name dbatools -
 #endregion
 
 #region These can be ran locally

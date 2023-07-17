@@ -9,7 +9,7 @@ Clear-Host
     Stop-Process -Name ssms -WhatIf 
 
     # Confirm
-    Stop-Process -Name smss -Confirm
+    Stop-Process -Name smss -Confirmn
 
     # verbose
     Stop-Process -Name ssms -Verbose
@@ -25,6 +25,7 @@ Clear-Host
     $InstanceParam
     
     Test-DbaMaxMemory @InstanceParam   
+    Test-DbaMaxDop @InstanceParam
 
     # adding a new name/value pair to the hash table
     $InstanceParam.Latest = $true
