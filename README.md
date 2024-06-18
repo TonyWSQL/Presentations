@@ -1,5 +1,8 @@
 ## Repo for the slidedecks and demo scripts from my presentations:
 
+May 5, 2024 – [SQL Saturday Jacksonville 2024](https://sqlsaturday.com/2024-05-04-sqlsaturday1068/)
+* Intro to PowerShell with dbatools
+
 November 11, 2023 - [SQL Saturday Oregon & SW Washington 2023](https://sqlsaturday.com/2023-11-11-sqlsaturday1057/)
 * Intro to PowerShell with dbatools
 
