@@ -1,6 +1,6 @@
 Clear-Host
 $instanceParam = @{
-    SqlInstance = 'inlap-wks1100\sql2022'
+    SqlInstance = 'INLAP-WKS11068\sql2019DE'
     Verbose = $true
     }
 

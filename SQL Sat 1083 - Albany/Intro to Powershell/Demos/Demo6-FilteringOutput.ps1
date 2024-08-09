@@ -1,7 +1,8 @@
 Clear-Host
+#Set-DbatoolsInsecureConnection
 
 #region Where-Object
-    Get-DbaRegisteredServer -Group Demo |
+    Get-DbaRegisteredServer -Group Demo | 
         Test-DbaBuild -Latest |
         Where-Object -FilterScript {$_.Compliant -EQ $false}
         #Where-Object {$_.Compliant -EQ $false}
@@ -30,8 +31,8 @@ Clear-Host
 #endregion
 
 #region Select-Object
-     Get-DbaRegisteredServer |
+     Get-DbaRegisteredServer -Group Demo  |
         Test-DbaBuild -Latest |
         Where-Object -FilterScript {$_.Compliant -EQ $false} |
-        Select-Object SqlInstance, Compliant, Build, Build*      
+        Select-Object SqlInstance, Compliant, Build*      
 #endregion

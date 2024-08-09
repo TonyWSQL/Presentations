@@ -4,24 +4,24 @@
     $dateString
     $dateString.GetType()
 
-    $instanceString = 'INLAP-WKS1100\SQL2022'
+    $instanceString = 'INLAP-WKS11068\SQL2022'
     $instanceString
 #endregion
 Import-Module dbatools  
 #region Typed
     Clear-Host
-    [datetime]$dateDT = '04/15/2023 10:45'
+    [datetime]$dateDT = '08/03/2023 10:45'
     $dateDT
     $dateDT.GetType()
 
-    $dateDT2 = [datetime]'04/15/2023 10:45'
+    $dateDT2 = [datetime]'08/03/2024 10:45'
     $dateDT2
     $dateDT2.GetType()
     
     $datedt.AddDays(1)
     $dateDT.DayOfWeek
 
-    [DbaInstance]$instanceDBA = 'INLAP-WKS1100\SQL2022'
+    [DbaInstance]$instanceDBA = 'INLAP-WKS11068\SQL2022DE'
     $instanceDBA
     $instancedba.GetType()
 #endregion
@@ -58,14 +58,13 @@ Import-Module dbatools
     $databaseName = @('master', 'model') #declaring the array with 2 items
     $databaseName += 'msdb'
     $databaseName
-    $databaseName[0]
+    $databaseName[-1]
     $databaseName.GetType()
 #endregion
 
 #region Hashtables
     Clear-Host
     $hashTable = @{
-
         Name = 'This is a hashtable'
         Value = 123
         Date = Get-Date

@@ -1,5 +1,5 @@
 #region This will start SSMS
-    Start-Process -FilePath "C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\Ssms.exe" 
+    Start-Process -FilePath "C:\Program Files (x86)\Microsoft SQL Server Management Studio 20\Common7\IDE\Ssms.exe"
     Get-Process -Name smss
 #endregion    
 Clear-Host
@@ -16,10 +16,16 @@ Clear-Host
 
 #endregion
 
+#region Set defaults just for this session
+Set-DbatoolsConfig -FullName sql.connection.trustcert -Value $true
+Set-DbatoolsConfig -FullName sql.connection.encrypt -Value $false
+Set-DbatoolsInsecureConnection
+#endregion
+
 #region 
     # Splatting - using a hashtable to pass parameters
     $InstanceParam = @{
-        SqlInstance = 'inlap-wks1100\sql2022'
+        SqlInstance = 'INLAP-WKS11068\SQL2019DE'
         Verbose = $true
     }
     $InstanceParam
@@ -42,6 +48,7 @@ Clear-Host
         #Add vaules to the the hash table to re-attach database 
 
         $DefaultPath = Get-DbaDefaultPath @InstanceParam
+        #Set-DbaDefaultPath -SqlInstance mmm -Type Backup -Path
         $DefaultPath
 
         $InstanceParam.Database = 'StackOverflow2010'
