@@ -1,6 +1,7 @@
 ## Repo for the slidedecks and demo scripts from my presentations:
 
 ###2024
+
 Aug 17, 2044 - [Data Saturday Columbus 2024] (https://datasaturdays.com/Event/20240817-datasaturday0058)
 * My Brain Has Blue Screened - Let’s Laugh
 
@@ -11,6 +12,7 @@ May 5, 2024 – [SQL Saturday Jacksonville 2024](https://sqlsaturday.com/2024-05
 * Intro to PowerShell with dbatools
 
 ###2023
+
 November 11, 2023 - [SQL Saturday Oregon & SW Washington 2023](https://sqlsaturday.com/2023-11-11-sqlsaturday1057/)
 * Intro to PowerShell with dbatools
 
