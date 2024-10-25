@@ -2,7 +2,12 @@
 
 ### 2024
 
+Nov 02, 2044 - [SQL Saturday Oregon & SW Washington 2024] (https://sqlsaturday.com/2024-11-02-sqlsaturday1082)
+* My Brain Has Blue Screened - Let’s Laugh
+
 Aug 17, 2044 - [Data Saturday Columbus 2024](https://datasaturdays.com/Event/20240817-datasaturday0058)
+
+Aug 17, 2044 - [Data Saturday Columbus 2024] (https://datasaturdays.com/Event/20240817-datasaturday0058)
 * My Brain Has Blue Screened - Let’s Laugh
 
 Aug 3, 2024 - [SQL Saturday Albany 2024](https://sqlsaturday.com/2024-08-03-sqlsaturday1083/)
