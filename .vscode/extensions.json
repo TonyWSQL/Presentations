@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"streetsidesoftware.code-spell-checker",
+		"piotrgredowski.poor-mans-t-sql-formatter-pg",
+		"ms-vscode.powershell",
+		"wayou.vscode-todo-highlight",
+		"bierner.github-markdown-preview",
+		"oderwat.indent-rainbow"
+	]
+}
