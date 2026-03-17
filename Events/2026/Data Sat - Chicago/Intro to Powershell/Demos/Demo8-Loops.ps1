@@ -1,3 +1,22 @@
+Clear-Host
+
+#region Conditionals
+IF ($true) {
+    Write-Host "This is true"
+}
+ELSE {
+    Write-Host "This is false"
+}
+#end region
+
+# Switch/case statement
+switch ($env:USERNAME) {
+    "awilhelm" { Write-Host "Welcome back Tony!" }
+    "jdoe" { Write-Host "Welcome back John!" }
+    default { Write-Host "Welcome back $($env:USERNAME)!" }
+}
+#end region
+
 #region For
     for (<#Initialize the counter#>$i = 1;  
         <#Conditional expression#> $i -le 10;

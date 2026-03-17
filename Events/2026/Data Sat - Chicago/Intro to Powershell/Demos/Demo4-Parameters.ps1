@@ -1,18 +1,21 @@
 #region This will start SSMS
     Start-Process -FilePath "C:\Program Files (x86)\Microsoft SQL Server Management Studio 20\Common7\IDE\Ssms.exe" 
-    Get-Process -Name ssms
+    Get-Process -Name SSMS 
 #endregion    
 Clear-Host
 
+# Set defaults just for this session
+Set-DbatoolsInsecureConnection -SessionOnly
+
 #region Common Parameters
-    # whatif 
-    Stop-Process -Name ssms -WhatIf 
+    # WhatIf 
+    Stop-Process -Name SSMS -WhatIf 
 
     # Confirm
-    Stop-Process -Name smss -Confirm
+    Stop-Process -Name SSMS -Confirm
 
     # verbose
-    Stop-Process -Name ssms -Verbose
+    Stop-Process -Name SSMS -Verbose
 
 #endregion
 
@@ -26,6 +29,7 @@ Clear-Host
     
     Test-DbaMaxMemory @InstanceParam   
     Set-DbaMaxMemory @InstanceParam -Confirm
+    
     Test-DbaMaxDop @InstanceParam
 
     # adding a new name/value pair to the hash table

@@ -2,11 +2,14 @@ Clear-Host
 #region 
     # Build a hash table to splat the instance parameter for the following commands
     $backupFile = 'C:\Users\anthony.wilhelm\OneDrive - Moser Consulting, Inc\Repos\Presentations\databases\Chicago.bak'
+    
+    Test-Path $backupFile
 
     $InstanceParam = @{
         SqlInstance = "$($env:COMPUTERNAME)\SQL2019DE"
         Verbose = $true
     }
+
     Get-DbaBackupInformation @InstanceParam -Path $backupFile |
         Restore-DbaDatabase @InstanceParam -WithReplace -WhatIf
 #endregion
@@ -19,6 +22,6 @@ Clear-Host
     $RestoreParam.WithReplace = $true
 
     Get-DbaBackupInformation @BackupInfoParam |
-        Restore-DbaDatabase @RestoreParam -whatif
+        Restore-DbaDatabase @RestoreParam -WhatIf
 
 #endregion

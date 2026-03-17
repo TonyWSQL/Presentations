@@ -1,8 +1,14 @@
 Clear-Host
 
+#TODO must start the SQL Engine service(s) on laptop prior to running this demo
+
 # get the latest build reference list from dbatools 
 ## Must be connected to the internet 
-Update-DbaBuildReference
+Update-DbaBuildReference 
+
+Find-DbaInstance -ComputerName $env:COMPUTERNAME 
+
+Get-DbaService -ComputerName $env:COMPUTERNAME -Type Engine 
 
 #region Where-Object
     Get-DbaRegisteredServer -Group Demo |
@@ -34,8 +40,8 @@ Update-DbaBuildReference
 #endregion
 
 #region Select-Object
-     Get-DbaRegisteredServer |
+    Get-DbaRegisteredServer -Group Demo |
         Test-DbaBuild -Latest |
-        Where-Object -FilterScript {$_.NameLevel -EQ 2022} |
+        #Where-Object -FilterScript {$_.NameLevel -EQ 2022} |
         Select-Object SqlInstance, Compliant, *level      
 #endregion

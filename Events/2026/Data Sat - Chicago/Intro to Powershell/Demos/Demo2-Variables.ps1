@@ -1,6 +1,6 @@
 #region Untyped
     Clear-Host
-    $dateString = '10/10/2025 10:45'
+    $dateString = '02/24/2026 11:12:04 AM'
     $dateString
     $dateString.GetType()
 
@@ -11,15 +11,15 @@
 Import-Module dbatools  
 #region Typed
     Clear-Host
-    [datetime]$dateDT = '10/10/2025 10:45'
+    [datetime]$dateDT = '02/24/2026 11:12:04 AM'
     $dateDT
     $dateDT.GetType()
 
-    $dateDT2 = [datetime]'10/10/2025 10:45'
+    $dateDT2 = [datetime]'02/24/2026 11:12:04 AM'
     $dateDT2
     $dateDT2.GetType()
     
-    $datedt.AddDays(1)
+    $dateDT2.AddDays(1)
     $dateDT.DayOfWeek
 
     [DbaInstance]$instanceDBA = "$($env:COMPUTERNAME)\SQL2019DE"
@@ -65,7 +65,7 @@ Import-Module dbatools
 
 #region Hashtables
     Clear-Host
-    $hashTable = @{
+    $hashTable = [ordered]@{
 
         Name = 'This is a hashtable'
         Value = 123

@@ -7,7 +7,6 @@ $instanceParam = @{
 #region Format-List
     Get-DbaDatabase @instanceParam -ExcludeSystem |
         Format-List SqlInstance, Name
-
 #endregion
 
 #region Format-Table
@@ -15,10 +14,10 @@ $instanceParam = @{
         Get-DbaDbFile |
         Select-Object SqlInstance, database, LogicalName, TypeDescription, *size*, growth* |
         Sort-Object TypeDescription |
-        Format-Table -AutoSize
+        Format-Table -AutoSize -GroupBy TypeDescription
 #endregion
 
-#region Out-Gridview
+#region Out-GridView
     Get-DbaDatabase @instanceParam |        
         Out-GridView -Title "Select a database" -PassThru |
         Get-DbaDbFile |
@@ -35,6 +34,10 @@ $instanceParam = @{
     Write-Verbose "This will output your code to the window as a verbose" -Verbose
 #endregion
 
+#region Write-debug
+    Write-Debug "This will output your code to the window as a debug message" -Debug
+#endregion
+
 #region Write-Warning
     Write-Warning "This will output your code to the window as a warning"
 #endregion
@@ -42,3 +45,5 @@ $instanceParam = @{
 #region Write-Error
     Write-Error "oops an error has occurred"     
 #endregion
+
+    

@@ -12,7 +12,7 @@ Clear-Host # clears the screen
     Uninstall-Module -Name dbatools 
     Update-Module -Name dbatools  
 
-    Find-Module -Name dbatools -       
+    Find-Module -Name dbatools -AllVersions -Repository PSGallery    
 #endregion
 
 #region These can be ran locally
@@ -43,5 +43,6 @@ Clear-Host # clears the screen
     Get-Help -Name Get-DbaRegisteredServer -ShowWindow
     Get-Help -Name Install-Module -ShowWindow
 
-   
+    
+
 #endregion
