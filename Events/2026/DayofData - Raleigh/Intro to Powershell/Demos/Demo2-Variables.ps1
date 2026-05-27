@@ -65,7 +65,7 @@ Import-Module dbatools
 
 #region Hashtables
     Clear-Host
-    $hashTable = [ordered]@{
+    $hashTable = @{
 
         Name = 'This is a hashtable'
         Value = 123
