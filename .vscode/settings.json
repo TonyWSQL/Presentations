@@ -1,10 +1,10 @@
 {
-    "cSpell.words": [
-        "dbatools",
-        "hashmark",
-        "Hashtables",
-        "Robbinsville",
-        "Waverly",
-        "Wytheville"
-    ]
+    "cSpell.customDictionaries": {
+        "project-words": {
+            "name": "project-words",
+            "path": "${workspaceFolder}/.cspell/dictionary.txt",
+            "description": "Project-specific words",
+            "addWords": true
+        }
+    }
 }
