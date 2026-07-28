@@ -107,26 +107,24 @@ Free hot breakfast · Pool · Hot tub · Free WiFi
 | 7:30 AM ET | start | **Depart Macon, GA** — I-16 E → I-95 S · Warner Robins Buc-ee's only 10 miles ahead |
 | ~7:45 AM ET | ~10 mi | 🟢 **Warner Robins, GA — Buc-ee's** — 7001 Russell Pkwy · I-75 Exit 144 · Quick top-off + coffee · Tank full for ~320 mi to Jacksonville · Cut east on I-16 after |
 | ~11:00 AM ET | ~240 mi | **Savannah, GA area** — I-16 E → I-95 S · Stretch stop if needed |
-| ~1:00 PM ET | ~80 mi | **Arrive Jacksonville — Check in** — Tru by Hilton · Baymeadows area · Unload bike for Adamec stop |
+| ~1:00 PM ET | ~80 mi | **Arrive Jacksonville — Check in** — Hampton Inn South JTB · Unload bike for Adamec stop |
 | ~1:30 PM ET | ~4 mi | 🟡 **Adamec H-D Baymeadows [H-D STOP — BIKE]** — 8909 Baymeadows Rd, Jacksonville FL 32256 · Open Wed 9 AM–6 PM ET · 15–20 min browse · Back at hotel by 2:00 PM ET · Load bike onto trailer |
 | ~2:30 PM ET | nearby | **Load bike — bike on trailer for Day 4** — Truck prepped · bike ready to go Thu morning · 4 PM hotel prep |
-| 4:00 PM ET | | **Hotel prep [BUFFER]** — Review slides · freshen up · hotel is ~10 min from Keiser · 2 hrs before presentation |
-| 5:45 PM ET | ~5 mi | **Depart hotel for Keiser University** — Allow 15 min · park on-site |
-| **6:00 PM ET** | | 🟣 **Jacksonville Data User Group — PRESENTATION** — Keiser University · 6430 Southpoint Pkwy, Jacksonville FL 32216 · ~90 min · Return to Baymeadows / JTC area for dinner after |
-| ~8:00 PM ET | nearby | **Dinner — post-presentation** — St. Johns Town Center / Baymeadows area |
+| 4:00 PM ET | | **Hotel prep [BUFFER]** — Review slides · freshen up · hotel is ~0.5 mi from Keiser · 2 hrs before presentation |
+| 5:55 PM ET | ~0.5 mi | **Depart hotel for Keiser University** — 2 min · park on-site |
+| **6:00 PM ET** | | 🟣 **Jacksonville Data User Group — PRESENTATION** — Keiser University · 6430 Southpoint Pkwy, Jacksonville FL 32216 · ~90 min · Dinner provided at event |
+| ~1:15 PM ET | | **Lunch on the bike — Jax Beach or Julington Creek** — Depart hotel east toward Jax Beach (~20 min) or south toward Julington Creek (~15 min) · then ride to Adamec Baymeadows |
 
-### Restaurant Recommendations — Jacksonville
-> **Metro Diner — Baymeadows** — Baymeadows & Southside Blvd · award-winning local comfort food · Jacksonville institution since 2000
+### Lunch on the Bike — Jacksonville
+> **Dockside Seafood — Jax Beach** — 2510 2nd Ave N, Jacksonville Beach · ocean-view patio · Jax Beach institution · shrimp · scallops · crab · Open Wed 11 AM
 >
-> **Midtown Table** — Medure Brothers local concept · Italian-inspired seasonal menu · house-made pasta · Baymeadows
+> **Sizemore's Coastal Kitchen — Jax Beach** — 333 1st St N, Jacksonville Beach · (904) 746-7161 · directly oceanfront · former boardwalk · crab cakes · pan-seared scallops · blackened shrimp pasta · Open Wed 10:30 AM
 >
-> **Cataluna** — Mediterranean fine dining · Wagyu tartare · fresh Branzino · Greek mezze · Baymeadows
+> **Julington Creek Fish Camp** — 12760 San Jose Blvd · ~15 min south · waterfront creek · same family as Palm's Fish Camp · Mayport shrimp · conch fritters · blue crab cakes · Open Wed 11 AM
 
-### 🏨 Night 3 — Tru by Hilton Jacksonville St. Johns Town Center
-4640 Tropea Way, Jacksonville FL 32246 · ~10 min from Keiser · 1-night stay
-Free build-your-own breakfast · Free WiFi · 24/7 market
-
-**Alternative:** Hampton Inn South / I-95 at JTB — 4681 Lenoir Ave S, Jacksonville FL 32216 · ~0.5 mi from Keiser
+### 🏨 Night 3 — Hampton Inn Jacksonville South / I-95 at JTB
+4681 Lenoir Ave S, Jacksonville FL 32216 · ~0.5 mi from Keiser · 1-night stay
+Free hot breakfast · Pool · Free WiFi
 
 > ⚠️ Day 4: truck departs JAX ~8 AM ET · bike unloads at Daytona · ride north to Adamec St. Aug then Ormond Loop · load bike · Seminole H-D via US-17 (avoids Orlando) · Miami ~7:30 PM ET.
 
@@ -253,5 +251,5 @@ Cartel Baggers Key West Getaway · Peterson's H-D South · KSU 10:30 AM
 | Peterson's H-D South | 19825 S Dixie Hwy, Miami FL 33157 | Cartel Baggers host · check-in 9:00 AM |
 | Keiser University (JAX) | 6430 Southpoint Pkwy, Jacksonville FL 32216 | Presentation venue · 6 PM Wed Sep 16 |
 | Hampton Inn Macon I-475 | 5010 Eisenhower Pkwy, Macon GA 31206 | (478) 803-4900 · Night 2 |
-| Tru by Hilton Jacksonville | 4640 Tropea Way, Jacksonville FL 32246 | 1-night stay · Night 3 |
+| Hampton Inn Jacksonville South JTB | 4681 Lenoir Ave S, Jacksonville FL 32216 | 1-night stay · Night 3 · ~0.5 mi from Keiser |
 | Hampton Inn Miami Kendall | 14060 SW 138th Ave, Miami FL 33186 | (305) 278-2002 · Night 4 |
