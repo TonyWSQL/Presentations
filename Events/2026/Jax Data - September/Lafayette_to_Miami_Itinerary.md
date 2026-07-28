@@ -1,223 +1,257 @@
 # Lafayette, IN → Miami, FL — Road Trip Itinerary
-**Sep 15–19, 2025**
+**Sep 14–18, 2026**
 
 | | |
 |---|---|
 | **Total Distance** | ~1,300 mi |
 | **Drive Days** | 3 days |
-| **H-D Dealer Stops** | 11 dealers |
-| **Overnight Stops** | 3 nights |
-
-| Night 1 | Night 2 | Night 3 | Event |
-|---|---|---|---|
-| Calhoun, GA | Jacksonville, FL | Miami, FL | Cartel Baggers · Key West Sep 19–21 |
+| **H-D Dealer Stops** | 10 dealers |
+| **Overnight Stops** | 4 nights |
+| **Night 1** | Nashville, TN |
+| **Night 2** | Macon, GA |
+| **Nights 3–4** | Jacksonville, FL · Miami, FL |
+| **Event** | Cartel Baggers Key West Getaway · Sep 18–20 |
+| **KSU** | Fri Sep 18 · 10:30 AM · FHP Escort |
 
 ---
 
 ## Route Overview
 
 | Day | Date | Segment | Key Stops |
-|---|---|---|---|
-| 1 | Mon Sep 15 | Lafayette → Nashville → Calhoun, GA | H-D Louisville · H-D Bowling Green · Smiths Grove Buc-ee's · Nashville dinner |
-| 2 | Tue Sep 16 | Calhoun → Jacksonville + 6 PM Presentation | Adairsville Buc-ee's · H-D Macon · Warner Robins Buc-ee's · 6 PM talk · unload bike |
-| 3 | Wed Sep 17 | Jacksonville → Bike loop → Miami (truck) | **BIKE:** St. Aug Buc-ee's · Adamec St. Aug · Daytona H-D · Ormond Loop · Daytona Buc-ee's · St. Aug Buc-ee's · Adamec Baymeadows · **TRUCK:** Cocoa Beach H-D · Seminole H-D (Sanford) · Miami |
-| 4 | Thu Sep 18 | Miami — ride day + H-D stops | Peterson's North H-D · Palm Beach H-D · Treasure Coast H-D · Alligator Alley H-D · load bike · dinner |
-| 5 | Fri Sep 19 | Miami checkout → Park 2 Store → Key West | Park 2 Store drop · Peterson's H-D South 8 AM · KSU 10:30 AM · Key West |
+|-----|------|---------|-----------|
+| 1 | Mon Sep 14 | Lafayette → Nashville (dinner + overnight) | H-D Louisville · H-D Bowling Green · Smiths Grove Buc-ee's · Nashville dinner · overnight Nashville |
+| 2 | Tue Sep 15 | Nashville → Chattanooga → Dalton → Cartersville → Macon, GA | White Lightning HD · Mountain Creek HD · Adairsville Buc-ee's · Southern Devil HD · H-D Macon · overnight Macon |
+| 3 | Wed Sep 16 | Macon → Jacksonville + Adamec Baymeadows + 6 PM Presentation | Warner Robins Buc-ee's · arrive JAX ~1 PM · Adamec Baymeadows (bike) · 4 PM prep · 6 PM Jax Data User Group · load bike |
+| 4 | Thu Sep 17 | Jacksonville → Daytona (unload) → St. Aug → Ormond Loop → Seminole H-D → Miami | BIKE: St. Aug Buc-ee's · Adamec St. Aug · Daytona H-D · Ormond Loop · Daytona Buc-ee's · load bike \| TRUCK: JAX → Daytona (wait) → US-17 → Seminole H-D → FL-417 → Miami |
+| 5 | Fri Sep 18 | Miami → Park 2 Store → Cartel Baggers Key West | Park 2 Store 8:00 AM · Peterson's H-D South 9:00 AM · KSU 10:30 AM · Key West |
 
 ---
 
-## DAY 1 — Mon, Sep 15
-**Lafayette → Nashville (dinner) → Calhoun, GA**
-~470 mi · 2 H-D stops · 1 fuel stop · Nashville dinner
+## DAY 1 — Mon, Sep 14
+**Lafayette → Nashville (dinner + overnight)**
+~345 mi · 2 H-D stops · 1 fuel stop · Overnight Nashville
 
-| Time | Mi | Stop |
-|---|---|---|
-| 11:00 AM | start | Depart Lafayette, IN — I-65 S toward Indianapolis |
-| ~1:30 PM | ~170 mi | 🟡 **Harley-Davidson Louisville** `[H-D STOP]` — 1700 Arthur St, Louisville KY · Open Mon 10 AM–6 PM · 15–30 min browse · Note: Bluegrass H-D closed Mondays |
-| ~3:00 PM | ~65 mi | 🟡 **Harley-Davidson Bowling Green** `[H-D STOP]` — 251 Cumberland Trace Rd, Bowling Green KY · I-65 Exit 22 · Open Mon 10 AM–6 PM · 15–30 min browse |
-| ~4:05 PM | ~35 mi | 🟢 **Smiths Grove, KY — Buc-ee's** `[FILL UP]` — 4001 Smiths Grove-Scottsville Rd · I-65 Exit 38 · Diesel + DEF · 120 pumps · 20 min fuel |
-| ~5:30 PM | ~75 mi | **Nashville, TN — Dinner** — Allow 1.5 hrs · Switch to I-24 E toward Calhoun after |
-
-### Nashville Restaurant Recommendations
 | | |
 |---|---|
-| **The Pharmacy Burger Parlor & Beer Garden** | East Nashville · burgers + house-made sodas in a vintage German beer garden |
-| **Husk Nashville** | Near downtown · Southern farm-to-table · rotating heirloom ingredient menu |
-| **Edley's Bar-B-Que** | 12 South · family-owned local BBQ institution · famous banana pudding |
+| **Depart** | 11:00 AM ET |
+| **Arrive Nashville** | ~4:30 PM CT |
+| **H-D Stops** | 2 (Louisville · Bowling Green) |
+| **Fuel Stops** | 1 (Smiths Grove) |
 
-| Time | Mi | Stop |
-|---|---|---|
-| ~10:00 PM | ~180 mi | Arrive Calhoun, GA — Check in · 6:45 AM departure tomorrow |
+| Time | Miles | Stop |
+|------|-------|------|
+| 11:00 AM ET | start | **Depart Lafayette, IN** — I-65 S toward Indianapolis |
+| ~1:30 PM ET | ~170 mi | 🟡 **Harley-Davidson Louisville** — 1700 Arthur St, Louisville KY 40208 · Open Mon 10 AM–6 PM ET · 15–30 min browse · Note: Bluegrass H-D (2755 Terra Crossing Blvd) is closed Mondays |
+| ~3:00 PM ET | ~65 mi | 🟡 **Harley-Davidson Bowling Green** — 251 Cumberland Trace Rd, Bowling Green KY 42103 · I-65 Exit 22 · Open Mon 10 AM–6 PM ET · 15–30 min browse · Depart ~3:30 PM ET |
+| ~4:05 PM ET | ~35 mi | 🟢 **Smiths Grove, KY — Buc-ee's** — 4001 Smiths Grove-Scottsville Rd · I-65 Exit 38 · Diesel + DEF confirmed · 120 pumps · 20 min fuel · ~75 mi to Nashville · ⏰ Clocks back 1 hr crossing KY→TN (ET→CT) |
+| ~4:30 PM CT | ~75 mi | **Nashville, TN — Arrive + Dinner** — Allow 1.5 hrs · Check in after dinner · I-24 E to Macon tomorrow morning |
 
-**🏨 Night 1 — Home2 Suites by Hilton Calhoun**
-902 Highway 53 SE, Calhoun GA 30701 · Right off I-75 · (762) 538-3001
-Free hot breakfast · Free parking · Outdoor pool · 24-hr fitness center
+### Restaurant Recommendations — Nashville
+> **The Pharmacy Burger Parlor & Beer Garden** — East Nashville · burgers + house-made sodas in a vintage German beer garden
+>
+> **Husk Nashville** — Near downtown · Southern farm-to-table · rotating heirloom ingredient menu from local producers
+>
+> **Edley's Bar-B-Que** — 12 South · family-owned local BBQ institution · famous banana pudding and Tennessee sides
 
-> Day 2 departs 6:45 AM — Calhoun puts you only ~25 mi from Adairsville Buc-ee's. Early start needed to hit Jacksonville by 4 PM.
+### 🏨 Night 1 — Nashville, TN (TBD)
+Downtown / Germantown / 12 South corridor · Confirm hotel before trip
+Free parking preferred · Easy I-24 E access for morning departure
+
+> ℹ️ Day 2 departs ~7:30 AM CT — I-24 E to I-75 S · ⏰ clocks forward 1 hr re-entering ET near Monteagle · White Lightning HD Chattanooga · Mountain Creek HD Dalton · Adairsville Buc-ee's · Southern Devil HD Cartersville · H-D Macon · overnight Macon.
 
 ---
 
-## DAY 2 — Tue, Sep 16
-**Calhoun, GA → Jacksonville + 6 PM Presentation**
-~505 mi · 1 H-D stop · 2 fuel stops · Jacksonville Data User Group · Unload bike after check-in
+## DAY 2 — Tue, Sep 15
+**Nashville → Chattanooga → Dalton → Cartersville → Macon, GA**
+~347 mi · 4 H-D stops · 2 fuel stops · Hotel by ~3:45 PM ET
 
-| Time | Mi | Stop |
-|---|---|---|
-| 6:45 AM | start | Depart Calhoun, GA — I-75 S toward Atlanta |
-| ~7:10 AM | ~25 mi | 🟢 **Adairsville, GA — Buc-ee's** `[TOP-OFF + COFFEE]` — 601 Union Grove Rd SE · I-75 Exit 306 · Diesel + DEF · 20 min fuel · Bypass Atlanta on I-75 S after |
-| ~9:20 AM | ~135 mi | Atlanta, GA — Drive through, no stop |
-| ~10:00 AM | ~160 mi | 🟡 **Harley-Davidson of Macon** `[H-D STOP]` — 5000 Mercer University Dr, Macon GA · Open Tue 9 AM–6 PM · 15–30 min browse |
-| ~10:45 AM | ~10 mi | 🟢 **Warner Robins, GA — Buc-ee's** `[FILL UP]` — 7001 Russell Pkwy · I-75 Exit 144 · Diesel + DEF · 20 min fuel · Cut east on I-16 toward Savannah · ~330 mi to Jacksonville on this tank |
-| ~2:00 PM | ~165 mi | Savannah, GA area — I-16 E → I-95 S · Stretch stop if needed |
-| ~4:00 PM | ~165 mi | Check in — Jacksonville, FL — Freshen up · review presentation notes · 2 hrs before meetup |
-| 6:00 PM | ~5 mi | 🎤 **Jacksonville Data User Group** `[PRESENTATION]` — Keiser University · 6430 Southpoint Pkwy, Jacksonville FL 32216 |
-| ~8:00 PM | nearby | Dinner — post-presentation · St. Johns Town Center / Baymeadows area |
-
-### Jacksonville Restaurant Recommendations
 | | |
 |---|---|
-| **Metro Diner — Baymeadows** | Baymeadows & Southside Blvd · award-winning local comfort food · featured on Diners, Drive-ins and Dives |
-| **Midtown Table** | Medure Brothers local concept · Italian-inspired seasonal menu · house-made pasta |
-| **Cataluna** | Mediterranean fine dining · Wagyu tartare · fresh Branzino · Greek mezze |
+| **Depart** | ~7:30 AM CT |
+| **Arrive Macon** | ~3:45 PM ET |
+| **H-D Stops** | 4 (Chattanooga · Dalton · Cartersville · Macon) |
+| **Fuel Stops** | 2 (Adairsville · Warner Robins) |
 
-| Time | | Stop |
-|---|---|---|
-| ~9:30 PM | | Unload motorcycle from trailer — hotel parking lot · bike ready to roll Wed morning · truck stays parked at hotel all day Wed |
+| Time | Miles | Stop |
+|------|-------|------|
+| ~7:30 AM CT | start | **Depart Nashville, TN** — I-24 E → I-75 S · ⏰ clocks forward 1 hr re-entering ET ~90 mi out |
+| ~10:30 AM ET | ~134 mi | 🟡 **White Lightning Harley-Davidson — Chattanooga** — 7720 Lee Hwy, Chattanooga TN · (423) 892-4888 · I-75 Exit 7 · Open Tue 9 AM–6 PM ET · 15–20 min browse · Easy on/off I-75 |
+| ~11:15 AM ET | ~30 mi | 🟡 **Mountain Creek Harley-Davidson — Dalton** — 1002 Market St, Dalton GA 30720 · (706) 370-7433 · I-75 Exit 333 · Open Tue 9 AM–6 PM ET · 15–20 min browse · Downtown Dalton, 2 mi off I-75 |
+| ~12:00 PM ET | ~29 mi | 🟢 **Adairsville, GA — Buc-ee's** — 601 Union Grove Rd SE · I-75 Exit 306 · Diesel + DEF · 120 pumps · 20 min fuel · Grab coffee and road snacks |
+| ~12:50 PM ET | ~29 mi | 🟡 **Southern Devil Harley-Davidson — Cartersville** — 2281 Highway 411 NE, Cartersville GA 30121 · (678) 721-0203 · I-75 Exit 293 · Open Tue 11 AM–6 PM ET · 15–20 min browse · ~2 mi off I-75 on Hwy 411 |
+| ~2:45 PM ET | ~115 mi | 🟡 **Harley-Davidson of Macon** — 5000 Mercer University Dr, Macon GA 31210 · Open Tue 9 AM–6 PM ET · 15–20 min browse · ~10 min to Warner Robins Buc-ee's · Hotel 5 mi from here |
+| ~3:10 PM ET | ~10 mi | 🟢 **Warner Robins, GA — Buc-ee's** — 7001 Russell Pkwy · I-75 Exit 144 · Diesel + DEF · 120 pumps · 20 min fuel · Full tank for Day 3 Macon→Jacksonville (~320 mi) |
+| ~3:45 PM ET | ~5 mi | **Arrive Macon — check in · Afternoon free** — Relax · explore downtown Macon · dinner at leisure |
 
-**🏨 Night 2 — Tru by Hilton Jacksonville St. Johns Town Center** *(preferred)*
-4640 Tropea Way, Jacksonville FL 32246 · ~10 min from Keiser · Free build-your-own breakfast · Free WiFi · 24/7 market
+### 🏨 Night 2 — Hampton Inn & Suites Macon I-475
+5010 Eisenhower Pkwy, Macon GA 31206 · (478) 803-4900
+Free hot breakfast · Pool · Hot tub · Free WiFi
 
-**Alternative — Hampton Inn South / I-95 at JTB**
-4681 Lenoir Ave S, Jacksonville FL 32216 · ~0.5 mi from Keiser · Free hot breakfast · Pool
-
----
-
-## DAY 3 — Wed, Sep 17
-**Jacksonville → Ormond Scenic Loop → Miami**
-BIKE: JAX–Daytona loop · TRUCK: JAX–Cocoa Beach–Sanford–Miami · ~9:20 PM arrival
-
-### 🏍️ BIKE — Jacksonville → St. Augustine → Daytona → Ormond Loop → Jacksonville
-
-| Time | Mi | Stop |
-|---|---|---|
-| 9:30 AM | start | Depart JAX hotel on bike · I-95 S · Truck stays parked at hotel · JAX rush hour clears by 9:30 AM |
-| ~10:20 AM | ~55 mi | 🟢 **St. Augustine, FL — Buc-ee's** `[FUEL + BREAKFAST]` — 200 World Commerce Pkwy · I-95 Exit 323 · 20 min fuel + breakfast · Fills tank for Daytona loop (~84 mi total) |
-| ~10:42 AM | ~1 mi | 🟡 **Adamec H-D St. Augustine I-95** `[H-D STOP]` — 380 Outlet Mall Blvd · same exit as Buc-ee's · Open Wed 9 AM–6 PM · 15–20 min browse |
-| ~11:45 AM | ~45 mi | 🟡 **Teddy Morse's Daytona H-D** `[H-D STOP]` — 1637 N US Hwy 1, Ormond Beach FL · Destination Daytona · Open Wed 9 AM–6 PM · 109,000 sq ft showroom · 15–20 min browse |
-| ~12:10 PM | ~5 mi | 🟦 **Ormond Scenic Loop** `[32-MILE SCENIC RIDE]` — Start: Granada Blvd & Beach St, Ormond Beach · National Scenic Byway · Oak canopy tunnels · Tomoka State Park · High Bridge Rd curves · ~55 min · No stoplights |
-| ~1:10 PM | ~1 mi | 🟢 **Daytona Beach, FL — Buc-ee's** `[FUEL + LUNCH]` — Destination Daytona · Adjacent to Teddy Morse's H-D · 20 min fuel + lunch · Depart ~1:30 PM north |
-| ~2:15 PM | ~45 mi | 🟢 **St. Augustine, FL — Buc-ee's** `[FUEL TOP-OFF]` — Northbound · Quick 10 min top-off · Ensures range for remaining ~55 mi to JAX |
-| ~3:20 PM | ~55 mi | 🟡 **Adamec H-D Baymeadows** `[H-D STOP + LOAD BIKE]` — 8909 Baymeadows Rd, Jacksonville FL · Open Wed 9 AM–6 PM · 15–20 min browse · Load bike ~20 min · Depart truck ~3:40 PM |
-
-### 🚗 TRUCK — Jacksonville → Cocoa Beach H-D → Seminole H-D → Miami
-
-| Time | Mi | Stop |
-|---|---|---|
-| ~3:40 PM | | Depart JAX south — Jetta + MC-10 trailer · I-95 S → SR-528 E (Beachline) to Cocoa Beach |
-| ~5:10 PM | ~100 mi | 🟡 **Cocoa Beach Harley-Davidson** `[H-D STOP]` — 3670 N Atlantic Ave, Cocoa Beach FL · Open Wed 9 AM–6 PM · 50 min window · Apparel/lifestyle store · Call ahead (321) 799-2221 · Park at Alan Shepard Park on A1A (~0.3 mi walk) |
-| ~6:20 PM | ~55 mi | 🟡 **Seminole Harley-Davidson** `[H-D STOP]` — 620 Hickman Circle, Sanford FL · Open Wed 9 AM–7 PM · 40 min window · One of FL's largest volume H-D stores · 15 min browse |
-| ~9:20 PM | ~230 mi | Arrive Miami — Hampton Inn & Suites Kendall — 14060 SW 138th Ave · via FL Turnpike S · Late arrival — dinner en route |
-
-> Florida has only 2 open Buc-ee's (St. Augustine + Daytona Beach) as of Sep 2025. Bike fuel range 100–125 mi: max segment St. Augustine→Daytona including loop = ~84 mi ✓
-
-**🏨 Night 3 — Hampton Inn & Suites by Hilton Miami Kendall**
-14060 SW 138th Ave, Miami FL 33186 · Next to Miami Executive Airport (KTMB)
-Free breakfast buffet · Free WiFi · Pool · ~30 mi to Downtown Miami & South Beach
+> ℹ️ Day 3 departs 7:30 AM ET — Warner Robins Buc-ee's only 10 miles out · ~320 mi to Jacksonville · arrive ~1 PM ET with time for Adamec Baymeadows before the 6 PM ET presentation.
 
 ---
 
-## DAY 4 — Thu, Sep 18
-**Miami — Full H-D Loop on Bike**
-Peterson's North · Palm Beach · Treasure Coast · Alligator Alley · ~250 mi loop
+## DAY 3 — Wed, Sep 16
+**Macon → Jacksonville + Adamec Baymeadows + 6 PM Presentation**
+~330 mi drive · Adamec Baymeadows on bike · 4 PM prep · 6 PM Keiser · Bike loaded overnight
 
-| Time | Mi | Stop |
-|---|---|---|
-| 9:30 AM | start | Depart Hampton Inn on bike · I-95 N · Truck stays parked at hotel |
-| ~9:50 AM | ~20 mi | 🟡 **Peterson's H-D of Miami** `[H-D STOP]` — 19400 NW 2nd Ave, Miami FL 33169 · Open Thu 10 AM–7 PM · Arrive just at open · 15–20 min browse |
-| ~11:30 AM | ~75 mi | 🟡 **Palm Beach Harley-Davidson** `[H-D STOP]` — 2955 45th St, West Palm Beach FL · Open Thu 10 AM–7 PM · 15–20 min browse · **Fuel up nearby (Shell/Wawa on I-95)** |
-| ~12:50 PM | ~40 mi | 🟡 **Treasure Coast H-D** `[H-D STOP + LUNCH]` — 4967 SE Federal Hwy, Stuart FL · Open Thu 10 AM–6 PM · 15–20 min browse · **Fuel up + lunch nearby** |
-| ~3:40 PM | ~85 mi | 🟡 **Alligator Alley H-D** `[H-D STOP]` — 201 International Pkwy, Sunrise FL · Open Thu 10 AM–7 PM · 15 min browse · Last stop — head south |
-| ~4:35 PM | ~30 mi | Return — Hampton Inn Kendall · Load bike onto trailer · Truck prepped for Fri morning |
-| ~7:00 PM | | Dinner — South Miami / Kendall area |
-
-### Thursday Lunch Recommendations (near Treasure Coast H-D, Stuart)
 | | |
 |---|---|
-| **Crabbys Port Salerno** | 4110 SE Salerno Rd · Royal Red shrimp · crab legs · crab bisque · scallops · waterfront |
-| **Basin Seafood Market & Kitchen** | 4150 SE Salerno Rd · all-you-can-eat blue crabs · fresh local shellfish · Port Salerno waterfront |
-| **Dolphin Bar & Shrimp House** | Jensen Beach · shrimp · crab legs · coconut shrimp · waterfront dining |
+| **Depart Macon** | 7:30 AM ET |
+| **Arrive JAX** | ~1:00 PM ET |
+| **Bike Stop** | Adamec Baymeadows · ~1:30 PM ET |
+| **Presentation** | 6:00 PM ET @ Keiser University |
 
-### Thursday Dinner Recommendations (Kendall / South Miami)
-| | |
-|---|---|
-| **El Toro Loco Steakhouse** | Local Miami steakhouse · expertly butchered cuts · rustic atmosphere · great value |
-| **Chef Adrianne's Vineyard** | Kendall institution · Angus filet · short rib · seasonal specials · reservation recommended |
-| **Finka Table & Tap** | Local legend · bold Cuban-Korean fusion · craft beer · Kendall staple |
+| Time | Miles | Stop |
+|------|-------|------|
+| 7:30 AM ET | start | **Depart Macon, GA** — I-16 E → I-95 S · Warner Robins Buc-ee's only 10 miles ahead |
+| ~7:45 AM ET | ~10 mi | 🟢 **Warner Robins, GA — Buc-ee's** — 7001 Russell Pkwy · I-75 Exit 144 · Quick top-off + coffee · Tank full for ~320 mi to Jacksonville · Cut east on I-16 after |
+| ~11:00 AM ET | ~240 mi | **Savannah, GA area** — I-16 E → I-95 S · Stretch stop if needed |
+| ~1:00 PM ET | ~80 mi | **Arrive Jacksonville — Check in** — Tru by Hilton · Baymeadows area · Unload bike for Adamec stop |
+| ~1:30 PM ET | ~4 mi | 🟡 **Adamec H-D Baymeadows [H-D STOP — BIKE]** — 8909 Baymeadows Rd, Jacksonville FL 32256 · Open Wed 9 AM–6 PM ET · 15–20 min browse · Back at hotel by 2:00 PM ET · Load bike onto trailer |
+| ~2:30 PM ET | nearby | **Load bike — bike on trailer for Day 4** — Truck prepped · bike ready to go Thu morning · 4 PM hotel prep |
+| 4:00 PM ET | | **Hotel prep [BUFFER]** — Review slides · freshen up · hotel is ~10 min from Keiser · 2 hrs before presentation |
+| 5:45 PM ET | ~5 mi | **Depart hotel for Keiser University** — Allow 15 min · park on-site |
+| **6:00 PM ET** | | 🟣 **Jacksonville Data User Group — PRESENTATION** — Keiser University · 6430 Southpoint Pkwy, Jacksonville FL 32216 · ~90 min · Return to Baymeadows / JTC area for dinner after |
+| ~8:00 PM ET | nearby | **Dinner — post-presentation** — St. Johns Town Center / Baymeadows area |
 
-> Fuel plan: Hampton Inn → Peterson's North → Palm Beach = ~95 mi (top off at Palm Beach). Palm Beach → Stuart = ~40 mi. Fuel again at Stuart. Stuart → Alligator Alley = ~85 mi · Alligator Alley → Hampton Inn = ~30 mi. All segments within 100–125 mi range.
+### Restaurant Recommendations — Jacksonville
+> **Metro Diner — Baymeadows** — Baymeadows & Southside Blvd · award-winning local comfort food · Jacksonville institution since 2000
+>
+> **Midtown Table** — Medure Brothers local concept · Italian-inspired seasonal menu · house-made pasta · Baymeadows
+>
+> **Cataluna** — Mediterranean fine dining · Wagyu tartare · fresh Branzino · Greek mezze · Baymeadows
+
+### 🏨 Night 3 — Tru by Hilton Jacksonville St. Johns Town Center
+4640 Tropea Way, Jacksonville FL 32246 · ~10 min from Keiser · 1-night stay
+Free build-your-own breakfast · Free WiFi · 24/7 market
+
+**Alternative:** Hampton Inn South / I-95 at JTB — 4681 Lenoir Ave S, Jacksonville FL 32216 · ~0.5 mi from Keiser
+
+> ⚠️ Day 4: truck departs JAX ~8 AM ET · bike unloads at Daytona · ride north to Adamec St. Aug then Ormond Loop · load bike · Seminole H-D via US-17 (avoids Orlando) · Miami ~7:30 PM ET.
 
 ---
 
-## DAY 5 — Fri, Sep 19
-**Miami Checkout → Park 2 Store → Key West**
+## DAY 4 — Thu, Sep 17
+**Jacksonville → Daytona (unload) → St. Aug → Ormond Loop → Seminole H-D → Miami**
+BIKE: Daytona–St. Aug–Ormond Loop · TRUCK: JAX–Daytona–US-17–Seminole H-D–Miami · ~7:30 PM arrival
+
+| | |
+|---|---|
+| **Depart JAX** | 8:00 AM ET |
+| **Arrive Miami** | ~7:30 PM ET |
+| **Bike Stops** | St. Aug Buc-ee's · Adamec St. Aug · Daytona H-D · Ormond Loop |
+| **Truck Stops** | Daytona (wait) · Seminole H-D · FL-417 → Miami |
+
+### 🚗 TRUCK — Jacksonville → Daytona (drop bike) · then US-17 S → Seminole H-D → FL-417 → Miami
+
+| Time | Miles | Stop |
+|------|-------|------|
+| 8:00 AM ET | start | **Depart JAX (Jetta + MC-10 trailer + loaded bike)** — I-95 S toward Daytona · ~95 mi |
+| ~9:30 AM ET | ~95 mi | **Arrive Daytona — Destination Daytona / Teddy Morse's H-D** — Unload bike ~30 min · Explore Destination Daytona (109,000 sq ft complex) while waiting for bike loop |
+| ~10:00 AM ET | ~0 mi | 🟢 **Daytona Beach, FL — Buc-ee's [TRUCK FILL UP]** — Destination Daytona · Adjacent to Teddy Morse's H-D · Diesel + DEF · 20 min · ⚠️ Required: Warner Robins → Daytona = ~415 mi (over 400 mi limit without this stop) |
+| ~2:15 PM ET | | **Bike loaded back up · Depart Daytona south** — US-17 S through DeLand toward Sanford · ~50 mi · Avoids Orlando / I-4 entirely |
+| ~3:30 PM ET | ~50 mi | 🟡 **Seminole Harley-Davidson** — 620 Hickman Circle, Sanford FL 32771 · Open Thu 9 AM–7 PM ET · One of FL's largest volume H-D stores · 20 min browse · Depart ~3:50 PM ET |
+| ~7:30 PM ET | ~230 mi | **Arrive Miami — Hampton Inn & Suites Kendall** — 14060 SW 138th Ave, Miami FL 33186 · ~230 mi via FL-417 S → FL Turnpike S |
+
+### 🏍️ BIKE — Daytona → St. Augustine (north) → Adamec St. Aug → Daytona H-D → Ormond Loop → Daytona Buc-ee's
+
+| Time | Miles | Stop |
+|------|-------|------|
+| ~10:00 AM ET | start | **Depart Daytona north on bike · I-95 N** — Unloaded from trailer at Destination Daytona · Heading north to St. Augustine first |
+| ~10:45 AM ET | ~45 mi | 🟢 **St. Augustine, FL — Buc-ee's** — 200 World Commerce Pkwy · I-95 Exit 323 · 20 min fuel + breakfast · Full tank for remaining loop (~83 mi to Daytona Buc-ee's via Adamec + Ormond) |
+| ~11:05 AM ET | ~1 mi | 🟡 **Adamec H-D St. Augustine I-95** — 380 Outlet Mall Blvd, St. Augustine FL 32084 · ~1 mi from Buc-ee's · same exit · Open Thu 9 AM–6 PM ET · 15–20 min browse · Depart ~11:25 AM ET south toward Daytona |
+| ~12:10 PM ET | ~45 mi | 🟡 **Teddy Morse's Daytona H-D** — 1637 N US Hwy 1, Ormond Beach FL · Destination Daytona · Open Thu 9 AM–6 PM ET · World-famous 109,000 sq ft showroom · 20 min browse · Depart ~12:30 PM ET north |
+| ~12:35 PM ET | ~5 mi | 🔵 **Ormond Scenic Loop — 32-MILE SCENIC RIDE** — Start: Granada Blvd & Beach St, Ormond Beach · National Scenic Byway · Oak canopy tunnels · Tomoka State Park · Walter Boardman Ln · High Bridge Rd (curviest section) · exits at A1A near Destination Daytona · No stoplights · ~55 min at a relaxed pace |
+| ~1:35 PM ET | ~1 mi | 🟢 **Daytona Beach, FL — Buc-ee's** — Destination Daytona · ~1 mi from loop exit · 30 min fuel + lunch · Back to truck for loading · Depart ~2:05 PM ET |
+| ~2:15 PM ET | ~1 mi | **Load bike onto trailer · Truck departs** — Destination Daytona parking · ~10 min load · US-17 S toward Sanford |
+
+**Fuel check:** Daytona → St. Aug = ~45 mi ✓ · St. Aug → Daytona H-D = ~45 mi ✓ · Daytona H-D → loop → Buc-ee's = ~38 mi ✓ · All under 125 mi limit.
+
+### 🏨 Night 4 — Hampton Inn & Suites Miami Kendall
+14060 SW 138th Ave, Miami FL 33186 · (305) 278-2002
+Free hot breakfast · Pool · Next to Miami Executive Airport · Checkout Fri morning
+
+> ⚠️ Park 2 Store 8:00 AM ET · Peterson's H-D South 9:00 AM ET · KSU 10:30 AM ET.
+
+---
+
+## DAY 5 — Fri, Sep 18
+**Miami Checkout → Park 2 Store → Cartel Baggers Key West**
 Cartel Baggers Key West Getaway · Peterson's H-D South · KSU 10:30 AM
 
-| Time | | Stop |
-|---|---|---|
-| Early AM | | Checkout — Hampton Inn & Suites Kendall · Drive truck + trailer to Park 2 Store (~15 mi) |
-| ~7:30 AM | ~15 mi | 🅿️ **Park 2 Store — Drop truck & trailer** `[STORAGE]` — 7248 SW 42nd Terrace, Miami FL 33155 · Off Palmetto Expressway & Bird Road · **24/7 access** · Automated gate · (305) 726-2375 · ~10 min to Peterson's by bike |
-| ~8:00 AM | ~3 mi | **Peterson's H-D South — Cartel Baggers check-in** — 19825 S Dixie Hwy, Miami FL 33157 · Check-in opens 8:00 AM · Light breakfast on-site |
-| 10:30 AM | | 🏍️ **Kickstands Up — FHP Escort to Key West** `[CARTEL BAGGERS]` |
+| | |
+|---|---|
+| **Checkout** | Hampton Inn Kendall · early AM ET |
+| **Park 2 Store** | **8:00 AM ET** · Drop truck & trailer |
+| **Check-in** | **Peterson's H-D South · 9:00 AM ET** |
+| **KSU** | **10:30 AM ET · FHP escort** |
 
-### Cartel Baggers Route
-1. **Jimmy Johnson's Big Chill** — MM 104 · Key Largo
-2. **Robbie's of Islamorada** — MM 77.5
-3. **Lick It BBQ** — MM 65.6 · Long Key
-4. **Sunset Grill**
-5. **Casa Marina Hotel** — Key West (overnight)
+| Time | Miles | Stop |
+|------|-------|------|
+| Early AM ET | | **Checkout — Hampton Inn & Suites Kendall** — 14060 SW 138th Ave · Drive truck + trailer to Park 2 Store · ~15 mi |
+| **8:00 AM ET** | ~15 mi | 🔵 **Park 2 Store — Drop truck & trailer** — 7248 SW 42nd Terrace, Miami FL 33155 · Off Palmetto Expressway & Bird Road · 24/7 access · Automated gate · (305) 726-2375 · ~10 min to Peterson's by bike |
+| **9:00 AM ET** | ~3 mi | **Peterson's H-D South — Cartel Baggers check-in** — 19825 S Dixie Hwy, Miami FL 33157 · Check-in opens 9:00 AM ET · Light breakfast on-site |
+| **10:30 AM ET** | | 🟢 **Kickstands Up — FHP Escort to Key West** — Peterson's H-D South · 19825 S Dixie Hwy, Miami FL 33157 |
 
-### Cartel Baggers Event Schedule
+**Escorted Route:**
+- Stop 1: Jimmy Johnson's Big Chill · MM 104 · Key Largo
+- Stop 2: Robbie's of Islamorada · MM 77.5
+- Stop 3: Lick It BBQ · MM 65.6 · Long Key
+- Stop 4: Sunset Grill
+- Overnight: Casa Marina Hotel · Key West
 
-| Day | Date | Event |
-|---|---|---|
-| Fri | Sep 19 | KSU 10:30 AM · FHP escort · Jimmy Johnson's · Robbie's · Lick It BBQ · Sunset Grill · Casa Marina check-in · Sloppy Joe's welcome party |
-| Sat | Sep 20 | Duval Street Bike Show 10 AM–2 PM · pool party · escorted ride to Pickles Sandbar |
-| Sun | Sep 21 | Leisure / return at own pace · ~160 mi to Miami on US-1 |
+### Cartel Baggers Key West Getaway · Sep 18–20
 
-> Option: Check in at Peterson's first (8 AM), then ride to Park 2 Store when it opens, return to Peterson's by ~9 AM — plenty of time before 10:30 AM KSU either way.
+| Day | Date | Event | Details |
+|-----|------|-------|---------|
+| Fri | Sep 18 | Escorted ride to Key West | KSU 10:30 AM · FHP escort · Jimmy Johnson's Big Chill · Robbie's of Islamorada · Lick It BBQ · Sunset Grill · Casa Marina check-in · Sloppy Joe's welcome party |
+| Sat | Sep 19 | Duval Street Bike Show | Bike show 10 AM–2 PM · pool party · escorted ride to Pickles Sandbar |
+| Sun | Sep 20 | Leisure / return | Return at own pace · Fuel up in Key West before departing · ~160 mi to Miami on US-1 |
 
 ---
 
 ## Fuel Stop Summary
 
-| Day | Date | Time | Location | Brand | Mi from Prev Stop | Diesel |
-|---|---|---|---|---|---|---|
-| 1 | Mon Sep 15 | ~4:05 PM | Smiths Grove, KY · I-65 Exit 38 | Buc-ee's | ~280 mi (from Lafayette) | Confirmed + DEF |
-| 2 | Tue Sep 16 | ~7:10 AM | Adairsville, GA · I-75 Exit 306 | Buc-ee's | ~130 mi (from Smiths Grove) | Confirmed + DEF |
-| 2 | Tue Sep 16 | ~10:45 AM | Warner Robins, GA · I-75 Exit 144 | Buc-ee's | ~160 mi (from Adairsville) | Confirmed + DEF |
-| 3 | Wed Sep 17 | ~10:20 AM | St. Augustine, FL · I-95 Exit 323 `[BIKE]` | Buc-ee's | ~55 mi (from JAX) | Confirmed |
-| 3 | Wed Sep 17 | ~1:10 PM | Daytona Beach, FL · Destination Daytona `[BIKE]` | Buc-ee's | ~84 mi (from St. Augustine incl. loop) | Confirmed |
-| 3 | Wed Sep 17 | ~2:15 PM | St. Augustine, FL · I-95 Exit 323 `[BIKE return]` | Buc-ee's | ~45 mi (from Daytona) | Confirmed |
+| Day | Date | Time | Location | Brand | Mi from Prev | Diesel |
+|-----|------|------|----------|-------|-------------|--------|
+| 1 | Mon Sep 14 | ~4:05 PM ET | Smiths Grove, KY · I-65 Exit 38 | Buc-ee's | ~280 mi (from Lafayette) | Confirmed + DEF |
+| 2 | Tue Sep 15 | ~12:00 PM ET | Adairsville, GA · I-75 Exit 306 | Buc-ee's | ~29 mi (from Mountain Creek H-D Dalton) | Confirmed + DEF |
+| 2 | Tue Sep 15 | ~3:10 PM ET | Warner Robins, GA · I-75 Exit 144 | Buc-ee's | ~125 mi (from Adairsville via Cartersville + Macon) | Confirmed + DEF |
+| 3 | Wed Sep 16 | ~7:45 AM ET | Warner Robins, GA · I-75 Exit 144 [TOP-OFF] | Buc-ee's | ~10 mi (from Macon hotel) | Confirmed + DEF |
+| 4 | Thu Sep 17 | ~10:45 AM ET | St. Augustine, FL · I-95 Exit 323 [BIKE — northbound] | Buc-ee's | ~45 mi (from Daytona) | Confirmed |
+| 4 | Thu Sep 17 | ~1:35 PM ET | Daytona Beach, FL · Destination Daytona [BIKE — after loop] | Buc-ee's | ~83 mi (Adamec St. Aug + Daytona H-D + loop) | Confirmed |
 
-> All Buc-ee's locations have diesel + DEF confirmed. Florida has only 2 open Buc-ee's (St. Augustine and Daytona Beach) as of Sep 2025 — Fort Pierce opens 2027. Truck 400-mile max met throughout: longest gap Day 2 Warner Robins→Jacksonville ~330 mi. Bike 100–125 mi range met throughout.
+**Notes:** Truck fuel stops: Smiths Grove (Day 1), Adairsville and Warner Robins (Day 2), Warner Robins top-off Day 3 morning. Bike fuels at St. Augustine northbound (45 mi from Daytona) then Daytona Buc-ee's after loop (83 mi from St. Aug). Florida has only two open Buc-ee's (St. Augustine and Daytona Beach) as of Sep 2026. Truck 400-mile max met throughout: longest gap Day 3 Warner Robins→Jacksonville ~320 mi. Bike 100–125 mi range met throughout: longest segment St. Augustine→Daytona H-D + loop + Buc-ee's = ~83 mi.
 
 ---
 
-## H-D Dealer Stop Summary
+## Harley-Davidson Dealer Stop Summary
 
 | Day | Date | Time | Dealership | Address | Hours |
-|---|---|---|---|---|---|
-| 1 | Mon Sep 15 | ~1:30 PM | Harley-Davidson Louisville | 1700 Arthur St, Louisville KY | Mon 10 AM–6 PM |
-| 1 | Mon Sep 15 | ~3:00 PM | H-D Bowling Green | 251 Cumberland Trace Rd, Bowling Green KY | Mon 10 AM–6 PM |
-| 2 | Tue Sep 16 | ~10:00 AM | Harley-Davidson of Macon | 5000 Mercer University Dr, Macon GA | Tue 9 AM–6 PM |
-| 3 | Wed Sep 17 | ~10:42 AM | Adamec H-D St. Augustine I-95 `[BIKE]` | 380 Outlet Mall Blvd, St. Augustine FL | Wed 9 AM–6 PM |
-| 3 | Wed Sep 17 | ~11:45 AM | Teddy Morse's Daytona H-D `[BIKE]` | 1637 N US Hwy 1, Ormond Beach FL | Wed 9 AM–6 PM |
-| 3 | Wed Sep 17 | ~3:20 PM | Adamec H-D Baymeadows `[BIKE return]` | 8909 Baymeadows Rd, Jacksonville FL | Wed 9 AM–6 PM |
-| 3 | Wed Sep 17 | ~5:10 PM | Cocoa Beach H-D `[TRUCK]` | 3670 N Atlantic Ave, Cocoa Beach FL | Wed 9 AM–6 PM |
-| 3 | Wed Sep 17 | ~6:20 PM | Seminole Harley-Davidson `[TRUCK]` | 620 Hickman Circle, Sanford FL | Wed 9 AM–7 PM |
-| 4 | Thu Sep 18 | ~9:50 AM | Peterson's H-D of Miami `[BIKE]` | 19400 NW 2nd Ave, Miami FL | Thu 10 AM–7 PM |
-| 4 | Thu Sep 18 | ~11:30 AM | Palm Beach H-D `[BIKE]` | 2955 45th St, West Palm Beach FL | Thu 10 AM–7 PM |
-| 4 | Thu Sep 18 | ~12:50 PM | Treasure Coast H-D `[BIKE]` | 4967 SE Federal Hwy, Stuart FL | Thu 10 AM–6 PM |
-| 4 | Thu Sep 18 | ~3:40 PM | Alligator Alley H-D `[BIKE]` | 201 International Pkwy, Sunrise FL | Thu 10 AM–7 PM |
+|-----|------|------|-----------|---------|-------|
+| 1 | Mon Sep 14 | ~1:30 PM ET | Harley-Davidson Louisville | 1700 Arthur St, Louisville KY | Mon 10 AM–6 PM ET |
+| 1 | Mon Sep 14 | ~3:00 PM ET | H-D Bowling Green | 251 Cumberland Trace Rd, Bowling Green KY | Mon 10 AM–6 PM ET |
+| 2 | Tue Sep 15 | ~10:30 AM ET | White Lightning H-D — Chattanooga | 7720 Lee Hwy, Chattanooga TN | Tue 9 AM–6 PM ET |
+| 2 | Tue Sep 15 | ~11:15 AM ET | Mountain Creek H-D — Dalton | 1002 Market St, Dalton GA | Tue 9 AM–6 PM ET |
+| 2 | Tue Sep 15 | ~12:50 PM ET | Southern Devil H-D — Cartersville | 2281 Highway 411 NE, Cartersville GA | Tue 11 AM–6 PM ET |
+| 2 | Tue Sep 15 | ~2:45 PM ET | Harley-Davidson of Macon | 5000 Mercer University Dr, Macon GA | Tue 9 AM–6 PM ET |
+| 3 | Wed Sep 16 | ~1:30 PM ET | Adamec H-D Baymeadows [BIKE] | 8909 Baymeadows Rd, Jacksonville FL | Wed 9 AM–6 PM ET |
+| 4 | Thu Sep 17 | ~11:05 AM ET | Adamec H-D St. Augustine I-95 [BIKE] | 380 Outlet Mall Blvd, St. Augustine FL | Thu 9 AM–6 PM ET |
+| 4 | Thu Sep 17 | ~12:10 PM ET | Teddy Morse's Daytona H-D [BIKE] | 1637 N US Hwy 1, Ormond Beach FL | Thu 9 AM–6 PM ET |
+| 4 | Thu Sep 17 | ~3:30 PM ET | Seminole Harley-Davidson [TRUCK] | 620 Hickman Circle, Sanford FL | Thu 9 AM–7 PM ET |
 
-> Bluegrass H-D (Louisville) closed Mondays — H-D Louisville (1700 Arthur St) is the Monday-open alternative. Cocoa Beach H-D is an apparel/lifestyle store — call ahead (321) 799-2221. Adamec H-D is a family-owned group operating since 1931 with locations in St. Augustine (I-95), Baymeadows, Orange Park, and Regency.
+**Notes:** Bluegrass H-D (Louisville) closed Mondays — H-D Louisville (1700 Arthur St) is the Monday-open alternative. Day 3: bike unloaded at JAX hotel on arrival (~1 PM) for Adamec Baymeadows, loaded back up by 2:30 PM. Day 4: bike unloaded at Daytona, rides north to Adamec St. Augustine then back south for Daytona H-D + Ormond Loop, then loads back onto truck at Destination Daytona (~2:15 PM). Truck takes US-17 S to Sanford (avoids Orlando). Adamec H-D is a family-owned group with locations in St. Augustine, Baymeadows, Orange Park, and Regency — all under the same ownership since 1931.
+
+---
+
+## Key Contacts & Addresses
+
+| Name | Address | Phone / Notes |
+|------|---------|---------------|
+| Park 2 Store | 7248 SW 42nd Terrace, Miami FL 33155 | (305) 726-2375 · 24/7 access |
+| Peterson's H-D South | 19825 S Dixie Hwy, Miami FL 33157 | Cartel Baggers host · check-in 9:00 AM |
+| Keiser University (JAX) | 6430 Southpoint Pkwy, Jacksonville FL 32216 | Presentation venue · 6 PM Wed Sep 16 |
+| Hampton Inn Macon I-475 | 5010 Eisenhower Pkwy, Macon GA 31206 | (478) 803-4900 · Night 2 |
+| Tru by Hilton Jacksonville | 4640 Tropea Way, Jacksonville FL 32246 | 1-night stay · Night 3 |
+| Hampton Inn Miami Kendall | 14060 SW 138th Ave, Miami FL 33186 | (305) 278-2002 · Night 4 |
