@@ -193,17 +193,17 @@ Cartel Baggers Key West Getaway · Peterson's H-D South · KSU 10:30 AM
 | **10:30 AM ET** | | 🟢 **Kickstands Up — FHP Escort to Key West** — Peterson's H-D South · 19825 S Dixie Hwy, Miami FL 33157 |
 
 **Escorted Route:**
-- Stop 1: Jimmy Johnson's Big Chill · MM 104 · Key Largo
+- Stop 1: Jimmy Johnson's Big Chill · Key Largo
 - Stop 2: Robbie's of Islamorada · MM 77.5
-- Stop 3: Sunset Grill
-- Overnight: Casa Marina Hotel · Key West
+- Stop 3: Sunset Grill · Marathon
+- End of ride: Casa Marina · Key West · Havana Nights Theme Dinner
 
 ### Cartel Baggers Key West Getaway · Sep 18–20
 
 | Day | Date | Event | Details |
 |-----|------|-------|---------|
-| Fri | Sep 18 | Escorted ride to Key West | KSU 10:30 AM · FHP escort · Jimmy Johnson's Big Chill · Robbie's of Islamorada · Sunset Grill · Casa Marina check-in · Sloppy Joe's welcome party |
-| Sat | Sep 19 | Duval Street Bike Show | Bike show 10 AM–2 PM · pool party · escorted ride to Pickles Sandbar |
+| Fri | Sep 18 | Escorted ride to Key West | KSU 10:30 AM · FHP escort · Big Chill Key Largo · Robbie's Islamorada · Sunset Grill Marathon · Casa Marina check-in · Havana Nights Theme Dinner |
+| Sat | Sep 19 | Bike Show + Pool Party + Rick's Bar | Bike Show 10 AM–2 PM · Pool Party 11 AM–6 PM · Tricycle 50/50 Race/Fundraiser during pool party · Party at Rick's Bar 8 PM–Until · all at Casa Marina / Key West |
 | Sun | Sep 20 | Leisure / return | Return at own pace · Fuel up in Key West before departing · ~160 mi to Miami on US-1 |
 
 ---
