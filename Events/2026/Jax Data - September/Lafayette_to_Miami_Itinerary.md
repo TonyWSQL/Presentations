@@ -44,18 +44,18 @@
 | ~1:30 PM ET | ~170 mi | 🟡 **Harley-Davidson Louisville** — 1700 Arthur St, Louisville KY 40208 · Open Mon 10 AM–6 PM ET · 15–30 min browse · Note: Bluegrass H-D (2755 Terra Crossing Blvd) is closed Mondays |
 | ~3:00 PM ET | ~65 mi | 🟡 **Harley-Davidson Bowling Green** — 251 Cumberland Trace Rd, Bowling Green KY 42103 · I-65 Exit 22 · Open Mon 10 AM–6 PM ET · 15–30 min browse · Depart ~3:30 PM ET |
 | ~4:05 PM ET | ~35 mi | 🟢 **Smiths Grove, KY — Buc-ee's** — 4001 Smiths Grove-Scottsville Rd · I-65 Exit 38 · 120 pumps · 20 min fuel · ~75 mi to Nashville · ⏰ Clocks back 1 hr crossing KY→TN (ET→CT) |
-| ~4:30 PM CT | ~75 mi | **Nashville, TN — Arrive + Dinner** — Allow 1.5 hrs · Check in after dinner · I-24 E to Macon tomorrow morning |
+| ~4:30 PM CT | ~75 mi | **Nashville, TN — Check in + Dinner** — Check in first · then dinner nearby · I-40 E → I-24 E to Macon tomorrow morning |
 
 ### Restaurant Recommendations — Nashville
-> **The Pharmacy Burger Parlor & Beer Garden** — East Nashville · burgers + house-made sodas in a vintage German beer garden
+> **Martin's Bar-B-Que Joint** — Donelson / multiple locations · ~5 min from BNA · iconic whole hog West TN pit BBQ · founded in Nolensville · massive portions
 >
-> **Husk Nashville** — Near downtown · Southern farm-to-table · rotating heirloom ingredient menu from local producers
+> **Peg Leg Porker** — The Gulch · ~15 min from BNA · acclaimed dry-rub hickory BBQ · James Beard-nominated · Tennessee whiskey selection
 >
-> **Edley's Bar-B-Que** — 12 South · family-owned local BBQ institution · famous banana pudding and Tennessee sides
+> **Edley's Bar-B-Que** — Donelson location · ~10 min from BNA · family-owned Nashville institution · famous banana pudding · Tennessee sides
 
 ### 🏨 Night 1 — Nashville, TN (TBD)
-Downtown / Germantown / 12 South corridor · Confirm hotel before trip
-Free parking preferred · Easy I-24 E access for morning departure
+Near BNA Airport · Hilton brand · Confirm hotel before trip
+Free parking preferred · Easy I-40 E → I-24 E access for Day 2 departure
 
 > ℹ️ Day 2 departs ~8:30 AM CT — I-24 E to I-75 S · ⏰ clocks forward 1 hr re-entering ET near Monteagle · White Lightning HD Chattanooga · Mountain Creek HD Dalton · Adairsville Buc-ee's · Southern Devil HD Cartersville · H-D Macon · overnight Macon.
 
