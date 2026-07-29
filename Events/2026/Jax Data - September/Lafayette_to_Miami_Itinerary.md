@@ -112,7 +112,7 @@ Free hot breakfast · Pool · Hot tub · Free WiFi
 | ~1:30 PM ET | ~4 mi | 🟡 **Adamec H-D Baymeadows [H-D STOP — BIKE]** — 8909 Baymeadows Rd, Jacksonville FL 32256 · Open Wed 9 AM–6 PM ET · 15–20 min browse · Back at hotel by 2:00 PM ET · Load bike onto trailer |
 | ~2:30 PM ET | nearby | **Load bike — bike on trailer for Day 4** — Jetta prepped · bike ready to go Thu morning · 4 PM hotel prep |
 | 4:00 PM ET | | **Hotel prep [BUFFER]** — Review slides · freshen up · hotel is ~0.5 mi from Keiser · 2 hrs before presentation |
-| 5:55 PM ET | ~0.5 mi | **Depart hotel for Keiser University** — 2 min · park on-site |
+| 5:30 PM ET | ~0.5 mi | **Depart hotel for Keiser University** — 30 min · park · set up · greet organizers |
 | **6:00 PM ET** | | 🟣 **Jacksonville Data User Group — PRESENTATION** — Keiser University · 6430 Southpoint Pkwy, Jacksonville FL 32216 · ~90 min · Dinner provided at event |
 
 ### Lunch on the Bike — Jacksonville
