@@ -6,7 +6,7 @@
 
 - [x] **Book Macon hotel (Night 2)** — Hampton Inn & Suites Macon I-475 · 5010 Eisenhower Pkwy · Check-in 4:00 PM Sep 15 · Check-out 11:00 AM Sep 16 ✓
 
-- [ ] **Book Jacksonville hotel**
+- [x] **Book Jacksonville hotel (Night 3)** — Hampton Inn Jacksonville South / I-95 at JTB · 4681 Lenoir Ave S · Check-in 3:00 PM Sep 16 · Check-out 11:00 AM Sep 17 ✓
 
 ## 🟡 Research Needed
 

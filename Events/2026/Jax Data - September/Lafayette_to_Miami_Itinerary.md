@@ -123,8 +123,8 @@ Check-in from 4:00 PM · Check-out by 11:00 AM · Free hot breakfast · Pool · 
 > **Julington Creek Fish Camp** — 12760 San Jose Blvd · ~15 min south · waterfront creek · same family as Palm's Fish Camp · Mayport shrimp · conch fritters · blue crab cakes · Open Wed 11 AM
 
 ### 🏨 Night 3 — Hampton Inn Jacksonville South / I-95 at JTB
-4681 Lenoir Ave S, Jacksonville FL 32216 · ~0.5 mi from Keiser · 1-night stay
-Free hot breakfast · Pool · Free WiFi
+4681 Lenoir Ave S, Jacksonville FL 32216 · ~0.5 mi from Keiser
+Check-in from 3:00 PM · Check-out by 11:00 AM · Free hot breakfast · Pool · Free WiFi
 
 > ⚠️ Day 4: Jetta departs JAX ~8 AM ET · bike unloads at Daytona · ride north to Adamec St. Aug then Ormond Loop · load bike · Seminole H-D via US-17 (avoids Orlando) · Miami ~7:30 PM ET.
 
