@@ -85,7 +85,7 @@ Free parking preferred · Easy I-24 E access for morning departure
 
 ### 🏨 Night 2 — Hampton Inn & Suites Macon I-475
 5010 Eisenhower Pkwy, Macon GA 31206 · (478) 803-4900
-Free hot breakfast · Pool · Hot tub · Free WiFi
+Check-in from 4:00 PM · Check-out by 11:00 AM · Free hot breakfast · Pool · Hot tub · Free WiFi
 
 > ℹ️ Day 3 departs 7:30 AM ET — Warner Robins Buc-ee's only 10 miles out · ~320 mi to Jacksonville · arrive ~1 PM ET with time for Adamec Baymeadows before the 6 PM ET presentation.
 
