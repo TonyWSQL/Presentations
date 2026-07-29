@@ -57,7 +57,7 @@
 Downtown / Germantown / 12 South corridor · Confirm hotel before trip
 Free parking preferred · Easy I-24 E access for morning departure
 
-> ℹ️ Day 2 departs ~7:30 AM CT — I-24 E to I-75 S · ⏰ clocks forward 1 hr re-entering ET near Monteagle · White Lightning HD Chattanooga · Mountain Creek HD Dalton · Adairsville Buc-ee's · Southern Devil HD Cartersville · H-D Macon · overnight Macon.
+> ℹ️ Day 2 departs ~8:30 AM CT — I-24 E to I-75 S · ⏰ clocks forward 1 hr re-entering ET near Monteagle · White Lightning HD Chattanooga · Mountain Creek HD Dalton · Adairsville Buc-ee's · Southern Devil HD Cartersville · H-D Macon · overnight Macon.
 
 ---
 
@@ -67,21 +67,21 @@ Free parking preferred · Easy I-24 E access for morning departure
 
 | | |
 |---|---|
-| **Depart** | ~7:30 AM CT |
-| **Arrive Macon** | ~3:45 PM ET |
+| **Depart** | ~8:30 AM CT |
+| **Arrive Macon** | ~4:45 PM ET |
 | **H-D Stops** | 4 (Chattanooga · Dalton · Cartersville · Macon) |
 | **Fuel Stops** | 2 (Adairsville · Warner Robins) |
 
 | Time | Miles | Stop |
 |------|-------|------|
-| ~7:30 AM CT | start | **Depart Nashville, TN** — I-24 E → I-75 S · ⏰ clocks forward 1 hr re-entering ET ~90 mi out |
-| ~10:30 AM ET | ~134 mi | 🟡 **White Lightning Harley-Davidson — Chattanooga** — 7720 Lee Hwy, Chattanooga TN · (423) 892-4888 · I-75 Exit 7 · Open Tue 9 AM–6 PM ET · 15–20 min browse · Easy on/off I-75 |
-| ~11:15 AM ET | ~30 mi | 🟡 **Mountain Creek Harley-Davidson — Dalton** — 1002 Market St, Dalton GA 30720 · (706) 370-7433 · I-75 Exit 333 · Open Tue 9 AM–6 PM ET · 15–20 min browse · Downtown Dalton, 2 mi off I-75 |
-| ~12:00 PM ET | ~29 mi | 🟢 **Adairsville, GA — Buc-ee's** — 601 Union Grove Rd SE · I-75 Exit 306 · Diesel + DEF · 120 pumps · 20 min fuel · Grab coffee and road snacks |
-| ~12:50 PM ET | ~29 mi | 🟡 **Southern Devil Harley-Davidson — Cartersville** — 2281 Highway 411 NE, Cartersville GA 30121 · (678) 721-0203 · I-75 Exit 293 · Open Tue 11 AM–6 PM ET · 15–20 min browse · ~2 mi off I-75 on Hwy 411 |
-| ~2:45 PM ET | ~115 mi | 🟡 **Harley-Davidson of Macon** — 5000 Mercer University Dr, Macon GA 31210 · Open Tue 9 AM–6 PM ET · 15–20 min browse · ~10 min to Warner Robins Buc-ee's · Hotel 5 mi from here |
-| ~3:10 PM ET | ~10 mi | 🟢 **Warner Robins, GA — Buc-ee's** — 7001 Russell Pkwy · I-75 Exit 144 · Diesel + DEF · 120 pumps · 20 min fuel · Full tank for Day 3 Macon→Jacksonville (~320 mi) |
-| ~3:45 PM ET | ~5 mi | **Arrive Macon — check in · Afternoon free** — Relax · explore downtown Macon · dinner at leisure |
+| ~8:30 AM CT | start | **Depart Nashville, TN** — I-24 E → I-75 S · ⏰ clocks forward 1 hr re-entering ET ~90 mi out |
+| ~11:30 AM ET | ~134 mi | 🟡 **White Lightning Harley-Davidson — Chattanooga** — 7720 Lee Hwy, Chattanooga TN · (423) 892-4888 · I-75 Exit 7 · Open Tue 9 AM–6 PM ET · 15–20 min browse · Easy on/off I-75 |
+| ~12:15 PM ET | ~30 mi | 🟡 **Mountain Creek Harley-Davidson — Dalton** — 1002 Market St, Dalton GA 30720 · (706) 370-7433 · I-75 Exit 333 · Open Tue 9 AM–6 PM ET · 15–20 min browse · Downtown Dalton, 2 mi off I-75 |
+| ~1:00 PM ET | ~29 mi | 🟢 **Adairsville, GA — Buc-ee's** — 601 Union Grove Rd SE · I-75 Exit 306 · Diesel + DEF · 120 pumps · 20 min fuel · Good lunch stop — food court inside |
+| ~1:50 PM ET | ~29 mi | 🟡 **Southern Devil Harley-Davidson — Cartersville** — 2281 Highway 411 NE, Cartersville GA 30121 · (678) 721-0203 · I-75 Exit 293 · Open Tue 11 AM–6 PM ET · 15–20 min browse · ~2 mi off I-75 on Hwy 411 |
+| ~3:45 PM ET | ~115 mi | 🟡 **Harley-Davidson of Macon** — 5000 Mercer University Dr, Macon GA 31210 · Open Tue 9 AM–6 PM ET · 15–20 min browse · ~10 min to Warner Robins Buc-ee's · Hotel 5 mi from here |
+| ~4:10 PM ET | ~10 mi | 🟢 **Warner Robins, GA — Buc-ee's** — 7001 Russell Pkwy · I-75 Exit 144 · Diesel + DEF · 120 pumps · 20 min fuel · Full tank for Day 3 Macon→Jacksonville (~320 mi) |
+| ~4:45 PM ET | ~5 mi | **Arrive Macon — check in · Evening free** — Relax · explore downtown Macon · dinner at leisure |
 
 ### 🏨 Night 2 — Hampton Inn & Suites Macon I-475
 5010 Eisenhower Pkwy, Macon GA 31206 · (478) 803-4900
@@ -214,8 +214,8 @@ Cartel Baggers Key West Getaway · Peterson's H-D South · KSU 10:30 AM
 | Day | Date | Time | Location | Brand | Mi from Prev | Diesel |
 |-----|------|------|----------|-------|-------------|--------|
 | 1 | Mon Sep 14 | ~4:05 PM ET | Smiths Grove, KY · I-65 Exit 38 | Buc-ee's | ~280 mi (from Lafayette) | Confirmed + DEF |
-| 2 | Tue Sep 15 | ~12:00 PM ET | Adairsville, GA · I-75 Exit 306 | Buc-ee's | ~29 mi (from Mountain Creek H-D Dalton) | Confirmed + DEF |
-| 2 | Tue Sep 15 | ~3:10 PM ET | Warner Robins, GA · I-75 Exit 144 | Buc-ee's | ~125 mi (from Adairsville via Cartersville + Macon) | Confirmed + DEF |
+| 2 | Tue Sep 15 | ~1:00 PM ET | Adairsville, GA · I-75 Exit 306 | Buc-ee's | ~29 mi (from Mountain Creek H-D Dalton) | Confirmed + DEF |
+| 2 | Tue Sep 15 | ~4:10 PM ET | Warner Robins, GA · I-75 Exit 144 | Buc-ee's | ~125 mi (from Adairsville via Cartersville + Macon) | Confirmed + DEF |
 | 3 | Wed Sep 16 | ~7:45 AM ET | Warner Robins, GA · I-75 Exit 144 [TOP-OFF] | Buc-ee's | ~10 mi (from Macon hotel) | Confirmed + DEF |
 | 4 | Thu Sep 17 | ~10:45 AM ET | St. Augustine, FL · I-95 Exit 323 [BIKE — northbound] | Buc-ee's | ~45 mi (from Daytona) | Confirmed |
 | 4 | Thu Sep 17 | ~1:35 PM ET | Daytona Beach, FL · Destination Daytona [BIKE — after loop] | Buc-ee's | ~83 mi (Adamec St. Aug + Daytona H-D + loop) | Confirmed |
@@ -230,10 +230,10 @@ Cartel Baggers Key West Getaway · Peterson's H-D South · KSU 10:30 AM
 |-----|------|------|-----------|---------|-------|
 | 1 | Mon Sep 14 | ~1:30 PM ET | Harley-Davidson Louisville | 1700 Arthur St, Louisville KY | Mon 10 AM–6 PM ET |
 | 1 | Mon Sep 14 | ~3:00 PM ET | H-D Bowling Green | 251 Cumberland Trace Rd, Bowling Green KY | Mon 10 AM–6 PM ET |
-| 2 | Tue Sep 15 | ~10:30 AM ET | White Lightning H-D — Chattanooga | 7720 Lee Hwy, Chattanooga TN | Tue 9 AM–6 PM ET |
-| 2 | Tue Sep 15 | ~11:15 AM ET | Mountain Creek H-D — Dalton | 1002 Market St, Dalton GA | Tue 9 AM–6 PM ET |
-| 2 | Tue Sep 15 | ~12:50 PM ET | Southern Devil H-D — Cartersville | 2281 Highway 411 NE, Cartersville GA | Tue 11 AM–6 PM ET |
-| 2 | Tue Sep 15 | ~2:45 PM ET | Harley-Davidson of Macon | 5000 Mercer University Dr, Macon GA | Tue 9 AM–6 PM ET |
+| 2 | Tue Sep 15 | ~11:30 AM ET | White Lightning H-D — Chattanooga | 7720 Lee Hwy, Chattanooga TN | Tue 9 AM–6 PM ET |
+| 2 | Tue Sep 15 | ~12:15 PM ET | Mountain Creek H-D — Dalton | 1002 Market St, Dalton GA | Tue 9 AM–6 PM ET |
+| 2 | Tue Sep 15 | ~1:50 PM ET | Southern Devil H-D — Cartersville | 2281 Highway 411 NE, Cartersville GA | Tue 11 AM–6 PM ET |
+| 2 | Tue Sep 15 | ~3:45 PM ET | Harley-Davidson of Macon | 5000 Mercer University Dr, Macon GA | Tue 9 AM–6 PM ET |
 | 3 | Wed Sep 16 | ~1:30 PM ET | Adamec H-D Baymeadows [BIKE] | 8909 Baymeadows Rd, Jacksonville FL | Wed 9 AM–6 PM ET |
 | 4 | Thu Sep 17 | ~11:05 AM ET | Adamec H-D St. Augustine I-95 [BIKE] | 380 Outlet Mall Blvd, St. Augustine FL | Thu 9 AM–6 PM ET |
 | 4 | Thu Sep 17 | ~12:10 PM ET | Teddy Morse's Daytona H-D [BIKE] | 1637 N US Hwy 1, Ormond Beach FL | Thu 9 AM–6 PM ET |
