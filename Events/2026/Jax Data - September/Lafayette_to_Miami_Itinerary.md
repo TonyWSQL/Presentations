@@ -44,7 +44,7 @@
 | ~1:30 PM ET | ~170 mi | 🟡 **Harley-Davidson Louisville** — 1700 Arthur St, Louisville KY 40208 · Open Mon 10 AM–6 PM ET · 15–30 min browse · Note: Bluegrass H-D (2755 Terra Crossing Blvd) is closed Mondays |
 | ~3:00 PM ET | ~65 mi | 🟡 **Harley-Davidson Bowling Green** — 251 Cumberland Trace Rd, Bowling Green KY 42103 · I-65 Exit 22 · Open Mon 10 AM–6 PM ET · 15–30 min browse · Depart ~3:30 PM ET |
 | ~4:05 PM ET | ~35 mi | 🟢 **Smiths Grove, KY — Buc-ee's** — 4001 Smiths Grove-Scottsville Rd · I-65 Exit 38 · 120 pumps · 20 min fuel · ~75 mi to Nashville · ⏰ Clocks back 1 hr crossing KY→TN (ET→CT) |
-| ~4:30 PM CT | ~75 mi | **Nashville, TN — Check in + Dinner** — Check in first · then dinner nearby · I-40 E → I-24 E to Macon tomorrow morning |
+| ~4:30 PM CT | ~75 mi | **Nashville, TN — Check in + #SQLFamily Dinner** — Check in first · Dinner with Jason Romans ([The DAX Shepherd](https://thedaxshepherd.com/)) & Sheila Romans · Coordinate location |
 
 ### Restaurant Recommendations — Nashville
 > **Martin's Bar-B-Que Joint** — Donelson / multiple locations · ~5 min from BNA · iconic whole hog West TN pit BBQ · founded in Nolensville · massive portions
