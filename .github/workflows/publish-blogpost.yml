@@ -16,28 +16,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Get changed post JSON files
-        id: changed
-        uses: tj-actions/changed-files@v44
-        with:
-          files: "blogposts/**.json"
-          files_ignore: "blogposts/published.json"
-
-      - name: Publish changed posts
-        if: steps.changed.outputs.any_changed == 'true'
+      - name: Publish all posts
         env:
           BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
         run: |
-          for f in ${{ steps.changed.outputs.all_changed_files }}; do
+          for f in blogposts/*.json; do
+            [ "$f" = "blogposts/published.json" ] && continue
             echo "Publishing $f"
             python blogposts/publish.py "$f"
           done
 
       - name: Commit updated published.json
-        if: steps.changed.outputs.any_changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
