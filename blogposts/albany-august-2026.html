@@ -24,7 +24,7 @@
 </div>
 
 <!-- INTRO -->
-<p style="font-family:'Playfair Display',serif;font-style:italic;font-size:1.1rem;color:#555555;border-left:3px solid #29aae1;padding-left:1rem;margin-bottom:2rem;line-height:1.6;">Albany calls, and V-RodDBA answers. Four days, two Southwest legs each way, one community data conference, and — allegedly — the world's largest Walmart. Let's go.</p>
+<p style="font-family:'Playfair Display',serif;font-style:italic;font-size:1.1rem;color:#555555;border-left:3px solid #29aae1;padding-left:1rem;margin-bottom:2rem;line-height:1.6;"><code>BEGIN TRAN</code> Albany calls, and V-RodDBA answers. Four days, two Southwest legs each way, one community data conference, and — allegedly — the world's largest Walmart. Time to <code>SELECT * FROM adventure WHERE city = 'Albany'</code>. Let's go.</p>
 
 <!-- DAY 1 -->
 <div style="border:1px solid #dddddd;border-radius:6px;background:#ffffff;margin-bottom:1.6rem;overflow:hidden;">
@@ -39,11 +39,11 @@
     <div style="display:inline-flex;align-items:center;gap:.35rem;font-family:'IBM Plex Mono',monospace;font-size:.78rem;font-weight:600;background:#333333;color:#ffffff;border-radius:4px;padding:.25rem .6rem;margin-bottom:.75rem;"><span style="color:#29aae1;">WN</span> IND → MDW → ALB</div>
     <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
       <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#29aae1;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">✈</span>
-      <span>Southwest out of Indianapolis, connect through Midway and land in Albany. Bags in hand, let the adventure begin.</span>
+      <span>Southwest out of Indianapolis, connect through Midway and land in Albany. No stored procedures required — just a boarding pass and a carry-on. Bags in hand, let the adventure begin.</span>
     </div>
     <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;border-top:1px dashed #dddddd;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
       <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#e67e22;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">🍽</span>
-      <span>#SQLFamily Dinner with <strong>Jason &amp; Sheila Romans</strong>, <strong>Kristyna Ferris</strong>, <strong>Chris Hyde</strong>, <strong>Andy Yun</strong>, and <strong>Deborah Melkin</strong> — venue TBD.<br/>Their blogs: <a href="https://thedaxshepherd.com/" style="color:#29aae1;">The DAX Shepherd</a> (Jason &amp; Sheila) &nbsp;·&nbsp; <a href="https://dataonwheels.wordpress.com/" style="color:#29aae1;">Data on Wheels</a> (Kristyna) &nbsp;·&nbsp; <a href="https://www.hydrate.consulting/" style="color:#29aae1;">Hydrate Consulting</a> (Chris) &nbsp;·&nbsp; <a href="https://sqlbek.wordpress.com/" style="color:#29aae1;">SQLBek</a> (Andy) &nbsp;·&nbsp; <a href="https://debthedba.wordpress.com/" style="color:#29aae1;">Deb the DBA</a> (Deborah)</span>
+      <span>#SQLFamily Dinner with <strong>Jason &amp; Sheila Romans</strong>, <strong>Kristyna Ferris</strong>, <strong>Chris Hyde</strong>, <strong>Andy Yun</strong>, and <strong>Deborah Melkin</strong> — venue TBD. Fair warning: index talk may occur between courses.<br/>Their blogs: <a href="https://thedaxshepherd.com/" style="color:#29aae1;">The DAX Shepherd</a> (Jason &amp; Sheila) &nbsp;·&nbsp; <a href="https://dataonwheels.wordpress.com/" style="color:#29aae1;">Data on Wheels</a> (Kristyna) &nbsp;·&nbsp; <a href="https://www.hydrate.consulting/" style="color:#29aae1;">Hydrate Consulting</a> (Chris) &nbsp;·&nbsp; <a href="https://sqlbek.wordpress.com/" style="color:#29aae1;">SQLBek</a> (Andy) &nbsp;·&nbsp; <a href="https://debthedba.wordpress.com/" style="color:#29aae1;">Deb the DBA</a> (Deborah)</span>
     </div>
   </div>
 </div>
@@ -64,7 +64,7 @@
     </div>
     <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;border-top:1px dashed #dddddd;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
       <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#27ae60;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">🛒</span>
-      <span><strong>World's Largest Walmart??</strong> Apparently this is a thing in the Albany area. And… what on earth is a <em>Cartalator</em>? A cart elevator? A shopping cart escalator? Investigation required. Photographic evidence will be obtained.</span>
+      <span><strong>World's Largest Walmart??</strong> Apparently this is a thing in the Albany area. And… what on earth is a <em>Cartalator</em>? A cart elevator? A shopping cart escalator? Either way, it's a full table scan of the grocery section. Investigation required. Photographic evidence will be obtained.</span>
     </div>
     <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;border-top:1px dashed #dddddd;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
       <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#e67e22;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">🍽</span>
@@ -72,7 +72,7 @@
     </div>
     <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;border-top:1px dashed #dddddd;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
       <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#29aae1;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">📊</span>
-      <span><strong>Speaker Dinner</strong> — Reconnecting with #SQLFamily before the big day. <a href="https://dataonwheels.wordpress.com/" style="color:#29aae1;">Kristyna Ferris</a> and <a href="https://www.hydrate.consulting/" style="color:#29aae1;">Chris Hyde</a> are wrapping up their full-day pre-con <em>Modern Data Warehousing with Microsoft Fabric</em>, so expect them to arrive with strong opinions about Lakehouses. Joining the table: <strong>Taiob Ali</strong>, <strong><a href="https://www.sqlservercentral.com/blog/the-voice-of-the-dba" style="color:#29aae1;">Steve Jones</a></strong>, <strong>Kevin Feasel</strong>, and the rest of the Day of Data Albany speaker crew — the kind of dinner where the conversation never quite leaves the data world, and nobody minds.</span>
+      <span><strong>Speaker Dinner</strong> — Reconnecting with #SQLFamily before the big day. <a href="https://dataonwheels.wordpress.com/" style="color:#29aae1;">Kristyna Ferris</a> and <a href="https://www.hydrate.consulting/" style="color:#29aae1;">Chris Hyde</a> are wrapping up their full-day pre-con <em>Modern Data Warehousing with Microsoft Fabric</em>, so expect them to arrive with strong opinions about Lakehouses and at least one hot take on medallion architecture. Joining the table: <strong>Taiob Ali</strong>, <strong><a href="https://www.sqlservercentral.com/blog/the-voice-of-the-dba" style="color:#29aae1;">Steve Jones</a></strong>, <strong>Kevin Feasel</strong>, and the rest of the Day of Data Albany speaker crew — the kind of dinner where the conversation never quite leaves the data world, and nobody minds.</span>
     </div>
   </div>
 </div>
@@ -100,7 +100,7 @@
         <span style="background:rgba(0,188,212,.2);border:1px solid rgba(0,188,212,.4);border-radius:3px;padding:.15rem .5rem;color:#ffffff;">🗓 August 8, 2026</span>
         <span style="background:rgba(0,188,212,.2);border:1px solid rgba(0,188,212,.4);border-radius:3px;padding:.15rem .5rem;color:#ffffff;">👥 Capacity: 300</span>
         <span style="background:rgba(0,188,212,.2);border:1px solid rgba(0,188,212,.4);border-radius:3px;padding:.15rem .5rem;color:#ffffff;">🎟 In-Person</span>
-        <span style="background:rgba(0,188,212,.2);border:1px solid rgba(0,188,212,.4);border-radius:3px;padding:.15rem .5rem;color:#ffffff;">🎤 My session: Intro to PowerShell with dbatools</span>
+        <span style="background:rgba(0,188,212,.2);border:1px solid rgba(0,188,212,.4);border-radius:3px;padding:.15rem .5rem;color:#ffffff;">🎤 My session: Intro to PowerShell with dbatools — because your DBA toolkit deserves a throttle, not just a mouse</span>
       </div>
       <p style="font-size:.9rem;color:rgba(255,255,255,.82);margin-bottom:.5rem;font-family:'Inter',sans-serif;">Hosted by the <strong>Capital Area SQL Server User Group</strong> (CASSUG), a 501(c)(3) non-profit. Attending alongside speakers including <a href="https://thedaxshepherd.com/" style="color:#29aae1;">Jason Romans</a> and <a href="https://dataonwheels.wordpress.com/" style="color:#29aae1;">Kristyna Ferris</a>.</p>
       <p style="font-size:.9rem;margin:0;font-family:'Inter',sans-serif;"><a href="https://dayofdata.org/2026-08-08-dayofdata1144/" style="color:#29aae1;">→ Event page &amp; registration</a></p>
@@ -125,11 +125,11 @@
     </div>
     <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;border-top:1px dashed #dddddd;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
       <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#29aae1;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">✈</span>
-      <span>The first leg out of Albany is shared with <strong>Jason &amp; Sheila Romans</strong>. Southwest passengers on this flight: you have been warned. This crew may be loud, caffeinated, and full of data conference opinions.</span>
+      <span>The first leg out of Albany is shared with <strong>Jason &amp; Sheila Romans</strong>. Southwest passengers on this flight: you have been warned. This crew may be loud, caffeinated, running hot from 48 hours of data conference opinions, and still debating whether NULL equals NULL.</span>
     </div>
     <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;border-top:1px dashed #dddddd;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
       <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#8e44ad;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">🏠</span>
-      <span>Connecting through Midway and back home to Indy. Another great trip in the books.</span>
+      <span>Connecting through Midway and back home to Indy. Another great trip in the books. <code>COMMIT TRAN</code></span>
     </div>
   </div>
 </div>

@@ -1,6 +1,7 @@
 Adairsville
 Adamec
 Baymeadows
+blogposts
 Branzino
 Cartalator
 CASSUG
@@ -10,8 +11,10 @@ Daytona
 dbatools
 Donelson
 Dragoness
+dragstrip
 Duval
 Edley's
+Feasel
 hashmark
 Hashtables
 IsHadrEnabled
@@ -29,14 +32,18 @@ mezze
 Monteagle
 Nolensville
 Ormond
+Playfair
 Robbinsville
 Scottsville
 Sizemore's
 slidedecks
 Southpoint
 Southside
+Taiob
+tempdb
 Tomoka
 Tropea
 Wagyu
 Waverly
+WSQL
 Wytheville

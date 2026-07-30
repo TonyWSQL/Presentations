@@ -1,0 +1,197 @@
+<!-- Paste into Blogger HTML editor. All styles inline — no head/body/style tags. -->
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<!-- POST HEADER -->
+<div style="background:#1e293b;border-radius:8px;padding:2.5rem 2rem 2rem;margin-bottom:2rem;">
+  <p style="font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#10b981;margin:0 0 .75rem 0;">V-RodDBA · Developer Notes</p>
+  <h2 style="font-family:'DM Sans',system-ui,sans-serif;font-size:2rem;font-weight:600;line-height:1.25;color:#f8fafc;margin:0 0 .75rem 0;">Automating Blogger Publishing with GitHub Actions</h2>
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1rem;color:rgba(248,250,252,.65);margin:0;line-height:1.6;">How I wired up a Python script and four GitHub secrets so that pushing an HTML file to my repo is all it takes to publish — or update — a blog post.</p>
+</div>
+
+<!-- INTRO -->
+<p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:1.5rem;">I already keep my presentation slides, session notes, and blog post drafts in a <a href="https://github.com/TonyWSQL/Presentations" style="color:#10b981;">GitHub repo</a>. It made sense — version control, easy sharing, one place for everything. What didn't make sense was the publishing ritual: open Blogger, click the HTML tab, paste the whole file, pray I got the right version, click Publish. Every. Single. Time. And heaven forbid I caught a typo afterward and had to do it again.</p>
+
+<p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:2rem;">A DBA who manually repeats the same process over and over without automating it should lose their keyboard privileges. So I fixed it. Push to <code style="font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .35rem;color:#0f172a;">main</code>, the post goes live. Push again, the existing post updates — no duplicates, no paste-and-pray. Here's exactly how it works.</p>
+
+<!-- SECTION: THE FILES -->
+<div style="margin-bottom:2rem;">
+  <h3 style="font-family:'DM Sans',system-ui,sans-serif;font-size:1.15rem;font-weight:600;color:#1e293b;margin:0 0 1rem 0;padding-bottom:.5rem;border-bottom:2px solid #10b981;">The three files per post</h3>
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:1rem;">Each blog post lives in the <code style="font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .35rem;color:#0f172a;">blogposts/</code> folder as a pair of files, with one shared index:</p>
+
+  <!-- File cards -->
+  <div style="display:flex;flex-direction:column;gap:.75rem;margin-bottom:1rem;">
+    <div style="display:flex;gap:1rem;align-items:flex-start;background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:.9rem 1.1rem;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:600;background:#1e293b;color:#10b981;border-radius:4px;padding:.2rem .55rem;white-space:nowrap;flex-shrink:0;">post.html</span>
+      <span style="font-family:'Source Serif 4',Georgia,serif;font-size:.95rem;color:#334155;line-height:1.55;">The blog post content — plain HTML fragment, no <code style="font-family:'JetBrains Mono',monospace;font-size:.85em;background:#e2e8f0;border-radius:3px;padding:.05rem .3rem;">&lt;html&gt;</code> wrapper. Written and styled to paste directly into Blogger's HTML editor.</span>
+    </div>
+    <div style="display:flex;gap:1rem;align-items:flex-start;background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:.9rem 1.1rem;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:600;background:#1e293b;color:#10b981;border-radius:4px;padding:.2rem .55rem;white-space:nowrap;flex-shrink:0;">post.json</span>
+      <span style="font-family:'Source Serif 4',Georgia,serif;font-size:.95rem;color:#334155;line-height:1.55;">Metadata: the post title, Blogger labels, and the name of its HTML file. The publish script reads this to know what to send.</span>
+    </div>
+    <div style="display:flex;gap:1rem;align-items:flex-start;background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:.9rem 1.1rem;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:600;background:#1e293b;color:#f4a261;border-radius:4px;padding:.2rem .55rem;white-space:nowrap;flex-shrink:0;">published.json</span>
+      <span style="font-family:'Source Serif 4',Georgia,serif;font-size:.95rem;color:#334155;line-height:1.55;">A shared index mapping each post's slug to its Blogger post ID. If the slug is already here, the script does a <code style="font-family:'JetBrains Mono',monospace;font-size:.85em;background:#e2e8f0;border-radius:3px;padding:.05rem .3rem;">PUT</code> (update) instead of a <code style="font-family:'JetBrains Mono',monospace;font-size:.85em;background:#e2e8f0;border-radius:3px;padding:.05rem .3rem;">POST</code> (create). This is what prevents duplicates.</span>
+    </div>
+  </div>
+
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:.95rem;line-height:1.7;color:#334155;margin:0;">A minimal metadata file looks like this:</p>
+  <pre style="font-family:'JetBrains Mono',monospace;font-size:.85rem;background:#0f172a;color:#e2e8f0;border-radius:6px;padding:1.1rem 1.25rem;overflow-x:auto;line-height:1.65;margin:.65rem 0 0 0;">{
+  "title": "Hitting the Road to Albany",
+  "labels": ["DayOfData", "PowerShell", "SQLFamily"],
+  "htmlFile": "albany-august-2026.html"
+}</pre>
+</div>
+
+<!-- SECTION: ONE-TIME SETUP -->
+<div style="margin-bottom:2rem;">
+  <h3 style="font-family:'DM Sans',system-ui,sans-serif;font-size:1.15rem;font-weight:600;color:#1e293b;margin:0 0 1rem 0;padding-bottom:.5rem;border-bottom:2px solid #10b981;">One-time setup</h3>
+
+  <!-- Step 1 -->
+  <div style="margin-bottom:1.25rem;">
+    <p style="font-family:'DM Sans',system-ui,sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#10b981;margin:0 0 .3rem 0;">Step 1 — Google Cloud Console</p>
+    <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin:0 0 .5rem 0;">Create a project, enable the <strong>Blogger API v3</strong>, and add an OAuth 2.0 credential (Desktop app type). Download the <code style="font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .35rem;color:#0f172a;">client_secret.json</code> file — you'll need it locally in the next step. Also grab your <strong>Blog ID</strong> from your Blogger dashboard URL.</p>
+    <p style="font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;color:#64748b;margin:0;line-height:1.6;font-style:italic;">Important: add yourself as a test user under the OAuth consent screen while the app is in "Testing" mode, or the token request will be blocked.</p>
+  </div>
+
+  <!-- Step 2 -->
+  <div style="margin-bottom:1.25rem;">
+    <p style="font-family:'DM Sans',system-ui,sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#10b981;margin:0 0 .3rem 0;">Step 2 — Get a refresh token (run once, locally)</p>
+    <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin:0 0 .65rem 0;">The GitHub Action needs a long-lived credential to call the Blogger API without interactive login. Run <code style="font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .35rem;color:#0f172a;">get_token.py</code> once on your machine — it opens a browser, you log in with your Google account, and it prints three values you'll store as secrets:</p>
+    <pre style="font-family:'JetBrains Mono',monospace;font-size:.85rem;background:#0f172a;color:#e2e8f0;border-radius:6px;padding:1.1rem 1.25rem;overflow-x:auto;line-height:1.65;margin:0 0 .65rem 0;">pip install google-auth-oauthlib
+python blogposts/get_token.py blogposts/client_secret.json</pre>
+    <p style="font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;color:#64748b;margin:0;line-height:1.6;font-style:italic;">Never commit <code style="font-family:'JetBrains Mono',monospace;font-size:.85em;background:#e8ecf0;border-radius:3px;padding:.05rem .3rem;font-style:normal;">client_secret.json</code> or the printed token values. They live only in GitHub Secrets.</p>
+  </div>
+
+  <!-- Step 3 -->
+  <div style="margin-bottom:0;">
+    <p style="font-family:'DM Sans',system-ui,sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#10b981;margin:0 0 .3rem 0;">Step 3 — Add four GitHub Secrets</p>
+    <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin:0 0 .75rem 0;">In your repo go to <strong>Settings → Secrets and variables → Actions</strong> and add:</p>
+    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;overflow:hidden;">
+      <table style="width:100%;border-collapse:collapse;font-family:'JetBrains Mono',monospace;font-size:.85rem;">
+        <thead>
+          <tr style="background:#1e293b;">
+            <th style="text-align:left;padding:.6rem 1rem;color:#94a3b8;font-weight:600;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;">Secret name</th>
+            <th style="text-align:left;padding:.6rem 1rem;color:#94a3b8;font-weight:600;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;">Where to get it</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-top:1px solid #e2e8f0;">
+            <td style="padding:.65rem 1rem;color:#10b981;font-weight:600;">BLOGGER_BLOG_ID</td>
+            <td style="padding:.65rem 1rem;color:#334155;font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;">Blogger dashboard URL</td>
+          </tr>
+          <tr style="border-top:1px solid #e2e8f0;background:#f1f5f9;">
+            <td style="padding:.65rem 1rem;color:#10b981;font-weight:600;">GOOGLE_CLIENT_ID</td>
+            <td style="padding:.65rem 1rem;color:#334155;font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;">Printed by <code style="font-size:.85em;background:#e2e8f0;border-radius:3px;padding:.05rem .3rem;">get_token.py</code></td>
+          </tr>
+          <tr style="border-top:1px solid #e2e8f0;">
+            <td style="padding:.65rem 1rem;color:#10b981;font-weight:600;">GOOGLE_CLIENT_SECRET</td>
+            <td style="padding:.65rem 1rem;color:#334155;font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;">Printed by <code style="font-size:.85em;background:#e2e8f0;border-radius:3px;padding:.05rem .3rem;">get_token.py</code></td>
+          </tr>
+          <tr style="border-top:1px solid #e2e8f0;background:#f1f5f9;">
+            <td style="padding:.65rem 1rem;color:#10b981;font-weight:600;">GOOGLE_REFRESH_TOKEN</td>
+            <td style="padding:.65rem 1rem;color:#334155;font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;">Printed by <code style="font-size:.85em;background:#e2e8f0;border-radius:3px;padding:.05rem .3rem;">get_token.py</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION: THE WORKFLOW -->
+<div style="margin-bottom:2rem;">
+  <h3 style="font-family:'DM Sans',system-ui,sans-serif;font-size:1.15rem;font-weight:600;color:#1e293b;margin:0 0 1rem 0;padding-bottom:.5rem;border-bottom:2px solid #10b981;">The GitHub Actions workflow</h3>
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin:0 0 .75rem 0;">The workflow lives at <code style="font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .35rem;color:#0f172a;">.github/workflows/publish-blogpost.yml</code>. It fires on any push to <code style="font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .35rem;color:#0f172a;">main</code> that touches a file in <code style="font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .35rem;color:#0f172a;">blogposts/</code>:</p>
+  <pre style="font-family:'JetBrains Mono',monospace;font-size:.82rem;background:#0f172a;color:#e2e8f0;border-radius:6px;padding:1.25rem 1.4rem;overflow-x:auto;line-height:1.7;margin:0 0 1rem 0;"><span style="color:#94a3b8;">name:</span> Publish Blog Post to Blogger
+
+<span style="color:#94a3b8;">on:</span>
+  <span style="color:#94a3b8;">push:</span>
+    <span style="color:#94a3b8;">branches:</span> [main]
+    <span style="color:#94a3b8;">paths:</span>
+      - <span style="color:#10b981;">"blogposts/**.json"</span>
+      - <span style="color:#10b981;">"blogposts/**.html"</span>
+
+<span style="color:#94a3b8;">jobs:</span>
+  <span style="color:#94a3b8;">publish:</span>
+    <span style="color:#94a3b8;">runs-on:</span> ubuntu-latest
+    <span style="color:#94a3b8;">permissions:</span>
+      <span style="color:#94a3b8;">contents:</span> write   <span style="color:#64748b;"># needed to commit published.json back</span>
+
+    <span style="color:#94a3b8;">steps:</span>
+      - <span style="color:#94a3b8;">uses:</span> actions/checkout@v4
+
+      - <span style="color:#94a3b8;">name:</span> Publish all posts
+        <span style="color:#94a3b8;">env:</span>
+          <span style="color:#94a3b8;">BLOGGER_BLOG_ID:</span> ${{ secrets.BLOGGER_BLOG_ID }}
+          <span style="color:#94a3b8;">GOOGLE_CLIENT_ID:</span> ${{ secrets.GOOGLE_CLIENT_ID }}
+          <span style="color:#94a3b8;">GOOGLE_CLIENT_SECRET:</span> ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          <span style="color:#94a3b8;">GOOGLE_REFRESH_TOKEN:</span> ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+        <span style="color:#94a3b8;">run:</span> |
+          for f in blogposts/*.json; do
+            [ "$f" = "blogposts/published.json" ] &amp;&amp; continue
+            python blogposts/publish.py "$f"
+          done
+
+      - <span style="color:#94a3b8;">name:</span> Commit updated published.json
+        <span style="color:#94a3b8;">run:</span> |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f blogposts/published.json
+          git diff --staged --quiet || git commit -m "chore: update published post index"
+          git push</pre>
+
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin:0;">The loop skips <code style="font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .35rem;color:#0f172a;">published.json</code> itself — that file is managed by the script, not treated as a post. After every successful run the bot commits the updated index back to the repo so future runs know which posts already exist on Blogger.</p>
+</div>
+
+<!-- SECTION: PUBLISH.PY -->
+<div style="margin-bottom:2rem;">
+  <h3 style="font-family:'DM Sans',system-ui,sans-serif;font-size:1.15rem;font-weight:600;color:#1e293b;margin:0 0 1rem 0;padding-bottom:.5rem;border-bottom:2px solid #10b981;">What publish.py actually does</h3>
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin:0 0 1rem 0;">The script is pure stdlib — no dependencies beyond the one-time <code style="font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .35rem;color:#0f172a;">google-auth-oauthlib</code> install for getting the initial token. On each run it:</p>
+
+  <ol style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.8;color:#334155;margin:0 0 1rem 0;padding-left:1.4rem;">
+    <li style="margin-bottom:.4rem;">Exchanges the stored refresh token for a short-lived access token using the OAuth2 token endpoint.</li>
+    <li style="margin-bottom:.4rem;">Reads the JSON metadata file to get the title, labels, and path to the HTML content.</li>
+    <li style="margin-bottom:.4rem;">Checks <code style="font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .35rem;color:#0f172a;">published.json</code> for the post slug. If found, it sends a <code style="font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .35rem;color:#0f172a;">PUT</code> to update. If not, it sends a <code style="font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .35rem;color:#0f172a;">POST</code> to create and records the new Blogger post ID.</li>
+    <li style="margin-bottom:0;">Writes the updated index back to disk so the workflow step can commit it.</li>
+  </ol>
+
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin:0;">The idempotency guarantee — update vs. create — comes entirely from that slug lookup. As long as the JSON filename stays the same, re-publishing the same post will always hit <em>update</em>, not <em>create</em>.</p>
+</div>
+
+<!-- SECTION: DAY TO DAY -->
+<div style="margin-bottom:2rem;">
+  <h3 style="font-family:'DM Sans',system-ui,sans-serif;font-size:1.15rem;font-weight:600;color:#1e293b;margin:0 0 1rem 0;padding-bottom:.5rem;border-bottom:2px solid #10b981;">Writing and publishing a new post</h3>
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin:0 0 .75rem 0;">Day-to-day the workflow is simple:</p>
+
+  <div style="display:flex;flex-direction:column;gap:.5rem;margin-bottom:1rem;">
+    <div style="display:flex;gap:.85rem;align-items:flex-start;">
+      <span style="flex-shrink:0;font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:600;background:#10b981;color:#fff;border-radius:50%;width:1.5rem;height:1.5rem;display:inline-flex;align-items:center;justify-content:center;">1</span>
+      <span style="font-family:'Source Serif 4',Georgia,serif;font-size:1rem;color:#334155;line-height:1.6;padding-top:.05rem;">Write your post as an HTML fragment in <code style="font-family:'JetBrains Mono',monospace;font-size:.88em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .3rem;color:#0f172a;">blogposts/my-post.html</code>.</span>
+    </div>
+    <div style="display:flex;gap:.85rem;align-items:flex-start;">
+      <span style="flex-shrink:0;font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:600;background:#10b981;color:#fff;border-radius:50%;width:1.5rem;height:1.5rem;display:inline-flex;align-items:center;justify-content:center;">2</span>
+      <span style="font-family:'Source Serif 4',Georgia,serif;font-size:1rem;color:#334155;line-height:1.6;padding-top:.05rem;">Create <code style="font-family:'JetBrains Mono',monospace;font-size:.88em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .3rem;color:#0f172a;">blogposts/my-post.json</code> with the title, labels, and the HTML filename.</span>
+    </div>
+    <div style="display:flex;gap:.85rem;align-items:flex-start;">
+      <span style="flex-shrink:0;font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:600;background:#10b981;color:#fff;border-radius:50%;width:1.5rem;height:1.5rem;display:inline-flex;align-items:center;justify-content:center;">3</span>
+      <span style="font-family:'Source Serif 4',Georgia,serif;font-size:1rem;color:#334155;line-height:1.6;padding-top:.05rem;">Commit and push to <code style="font-family:'JetBrains Mono',monospace;font-size:.88em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .3rem;color:#0f172a;">main</code>. Stage light goes green, the Action launches, and your post is off the line before you can close the terminal. The bot commits the updated <code style="font-family:'JetBrains Mono',monospace;font-size:.88em;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:.1rem .3rem;color:#0f172a;">published.json</code> back on its own.</span>
+    </div>
+    <div style="display:flex;gap:.85rem;align-items:flex-start;">
+      <span style="flex-shrink:0;font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:600;background:#64748b;color:#fff;border-radius:50%;width:1.5rem;height:1.5rem;display:inline-flex;align-items:center;justify-content:center;">↺</span>
+      <span style="font-family:'Source Serif 4',Georgia,serif;font-size:1rem;color:#334155;line-height:1.6;padding-top:.05rem;">Edit the HTML and push again anytime — the same post on Blogger gets updated in place.</span>
+    </div>
+  </div>
+</div>
+
+<!-- CLOSING -->
+<p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:.75rem;">The whole thing is about 100 lines of Python and a 40-line YAML file. No frameworks, no npm, no containers — just the Blogger API, four secrets, and a push hook. If you already keep your content in git, this is about as lean as a publishing pipeline gets. I built it with a little help from <a href="https://claude.ai" style="color:#10b981;">Claude</a>, which made the back-and-forth on the OAuth flow considerably less painful.</p>
+
+<p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:2rem;">The full source — workflow, publish script, and token helper — is in the <a href="https://github.com/TonyWSQL/Presentations/tree/main/blogposts" style="color:#10b981;">blogposts/ folder of my Presentations repo</a> on GitHub. Steal it freely. The only thing I ask is that you actually use it — a half-automated workflow sitting in a branch nobody pushed is just digital clutter, and tempdb has enough of that already.</p>
+
+<!-- FOOTER -->
+<div style="border-top:1px solid #e2e8f0;padding-top:1.25rem;display:flex;align-items:center;gap:.6rem;">
+  <span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#94a3b8;">V-RodDBA</span>
+  <span style="color:#e2e8f0;">·</span>
+  <span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#94a3b8;">July 2026</span>
+  <span style="color:#e2e8f0;">·</span>
+  <a href="https://github.com/TonyWSQL/Presentations/tree/main/blogposts" style="font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#10b981;text-decoration:none;">github.com/TonyWSQL/Presentations</a>
+</div>
