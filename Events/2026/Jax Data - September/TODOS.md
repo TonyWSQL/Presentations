@@ -2,7 +2,7 @@
 
 ## 🔴 Must Do Before Trip
 
-- [ ] **Book Nashville hotel (Night 1)** — Downtown / Germantown / 12 South corridor · Free parking + easy I-24 E access for 7:30 AM departure · Once booked, update `build_itinerary_v3.py` Day 1 `hotel_row` with name, address, and phone
+- [x] **Book Nashville hotel (Night 1)** — Hampton Inn & Suites Nashville-Airport · Check-in 3:00 PM Sep 14 · Check-out 11:00 AM Sep 15 ✓
 
 - [x] **Book Macon hotel (Night 2)** — Hampton Inn & Suites Macon I-475 · 5010 Eisenhower Pkwy · Check-in 4:00 PM Sep 15 · Check-out 11:00 AM Sep 16 ✓
 

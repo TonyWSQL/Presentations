@@ -53,9 +53,9 @@
 >
 > **Edley's Bar-B-Que** — Donelson location · ~10 min from BNA · family-owned Nashville institution · famous banana pudding · Tennessee sides
 
-### 🏨 Night 1 — Nashville, TN (TBD)
-Near BNA Airport · Hilton brand · Confirm hotel before trip
-Free parking preferred · Easy I-40 E → I-24 E access for Day 2 departure
+### 🏨 Night 1 — Hampton Inn & Suites Nashville-Airport
+Near BNA Airport · Check-in from 3:00 PM · Check-out by 11:00 AM
+Free parking · Free hot breakfast · Free WiFi · I-40 E → I-24 E for Day 2 departure
 
 > ℹ️ Day 2 departs ~8:30 AM CT — I-24 E to I-75 S · ⏰ clocks forward 1 hr re-entering ET near Monteagle · White Lightning HD Chattanooga · Mountain Creek HD Dalton · Adairsville Buc-ee's · Southern Devil HD Cartersville · H-D Macon · overnight Macon.
 
