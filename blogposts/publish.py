@@ -88,6 +88,9 @@ def main():
     }
     if "publishedAt" in meta:
         post_body["published"] = meta["publishedAt"]
+    elif meta.get("updatePublishedDate"):
+        from datetime import datetime, timezone
+        post_body["published"] = datetime.now(timezone.utc).isoformat()
 
     if post_key in published:
         post_id = published[post_key]
@@ -100,6 +103,12 @@ def main():
         published[post_key] = result["id"]
         save_published(published)
         print(f"Published post: {result['url']}")
+
+    # Reset updatePublishedDate to false after publish so future pushes
+    # don't keep bumping the date.
+    if meta.get("updatePublishedDate"):
+        meta["updatePublishedDate"] = False
+        meta_path.write_text(json.dumps(meta, indent=2))
 
 
 if __name__ == "__main__":
