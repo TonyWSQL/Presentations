@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - "blogposts/**.json"
-      - "blogposts/**.html"
+      - "blogposts/**/*.json"
+      - "blogposts/**/*.html"
 
 jobs:
   publish:
@@ -23,8 +23,7 @@ jobs:
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
         run: |
-          for f in blogposts/*.json; do
-            [ "$f" = "blogposts/published.json" ] && continue
+          find blogposts -name "*.json" -not -name "published.json" | while read f; do
             echo "Publishing $f"
             python blogposts/publish.py "$f"
           done

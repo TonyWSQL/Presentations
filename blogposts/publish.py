@@ -77,7 +77,9 @@ def main():
     token = get_access_token()
 
     published = load_published()
-    post_key = meta_path.stem
+    # Use subfolder/stem as key (e.g. "travel/albany-august-2026") to avoid
+    # collisions if posts in different folders share a filename.
+    post_key = f"{meta_path.parent.name}/{meta_path.stem}"
 
     post_body = {
         "title": meta["title"],
