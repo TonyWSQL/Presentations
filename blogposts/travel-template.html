@@ -1,0 +1,160 @@
+<!-- Paste into Blogger HTML editor. All styles inline — no head/body/style tags. -->
+<!-- TEMPLATE: Replace all {{PLACEHOLDER}} values with event-specific content. -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&amp;family=IBM+Plex+Mono:wght@400;600&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet" />
+
+<!-- MASTHEAD -->
+<div style="background:#333333;color:#ffffff;padding:2.5rem 1.5rem 2rem;text-align:center;margin:0 0 0 0;border-radius:6px 6px 0 0;background-image:repeating-linear-gradient(90deg,transparent 0px,transparent 38px,rgba(255,255,255,.03) 38px,rgba(255,255,255,.03) 40px);">
+  <p style="font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#29aae1;margin:0 0 .6rem 0;">V-RodDBA on the Road</p>
+  <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:2.4rem;font-weight:700;line-height:1.15;margin:0 0 .7rem 0;color:#ffffff;">Hitting the Road to <em style="font-style:italic;color:#29aae1;">{{DESTINATION_CITY}}</em></h2>
+  <p style="font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:rgba(255,255,255,.5);letter-spacing:.08em;margin:0;">{{DATE_RANGE}} &nbsp;·&nbsp; {{EVENT_NAME_AND_NUMBER}}</p>
+</div>
+
+<!-- ROUTE RIBBON — update airport codes and add/remove legs as needed -->
+<div style="background:#29aae1;color:#ffffff;font-family:'IBM Plex Mono',monospace;font-size:.78rem;letter-spacing:.1em;text-align:center;padding:.55rem 1rem;display:flex;justify-content:center;align-items:center;gap:.4rem;flex-wrap:wrap;margin:0 0 1.8rem 0;border-radius:0 0 6px 6px;">
+  <span style="font-weight:600;background:rgba(0,0,0,.15);border-radius:3px;padding:.1rem .4rem;">{{ORIGIN_AIRPORT}}</span>
+  <span style="opacity:.7;">→</span>
+  <!-- Add/remove connection airports as needed -->
+  <span style="font-weight:600;background:rgba(0,0,0,.15);border-radius:3px;padding:.1rem .4rem;">{{CONNECTION_AIRPORT}}</span>
+  <span style="opacity:.7;">→</span>
+  <span style="font-weight:600;background:rgba(0,0,0,.15);border-radius:3px;padding:.1rem .4rem;">{{DESTINATION_AIRPORT}}</span>
+  <span style="opacity:.6;font-size:.85em;">and back again</span>
+  <span style="font-weight:600;background:rgba(0,0,0,.15);border-radius:3px;padding:.1rem .4rem;">{{DESTINATION_AIRPORT}}</span>
+  <span style="opacity:.7;">→</span>
+  <span style="font-weight:600;background:rgba(0,0,0,.15);border-radius:3px;padding:.1rem .4rem;">{{CONNECTION_AIRPORT}}</span>
+  <span style="opacity:.7;">→</span>
+  <span style="font-weight:600;background:rgba(0,0,0,.15);border-radius:3px;padding:.1rem .4rem;">{{ORIGIN_AIRPORT}}</span>
+</div>
+
+<!-- INTRO — one or two punchy sentences teasing the trip -->
+<p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#555555;border-left:3px solid #29aae1;padding-left:1rem;margin-bottom:2rem;line-height:1.6;">{{INTRO_PARAGRAPH}}</p>
+
+<!-- DAY 1 — Travel Day (outbound) -->
+<div style="border:1px solid #dddddd;border-radius:6px;background:#ffffff;margin-bottom:1.6rem;overflow:hidden;">
+  <div style="display:flex;align-items:stretch;border-bottom:1px solid #dddddd;">
+    <div style="background:#333333;color:#ffffff;font-family:'IBM Plex Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);padding:.7rem .5rem;white-space:nowrap;">{{DAY1_LABEL}}</div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:.9rem 1.1rem;flex:1;min-width:0;">
+      <div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;line-height:1.3;color:#212121;">{{DAY1_TITLE}}</div>
+        <div style="font-size:.8rem;color:#888888;margin-top:.2rem;font-family:'IBM Plex Mono',monospace;">{{DAY1_SUBTITLE}}</div>
+      </div>
+      <!-- Day photo: raw GitHub URL recommended (https://raw.githubusercontent.com/TonyWSQL/Presentations/main/blogposts/images/{{FILENAME}}.jpg). Stays hidden until src resolves. -->
+      <img src="" alt="{{DAY1_LABEL}}" style="height:70px;width:110px;object-fit:cover;border-radius:4px;flex-shrink:0;margin-left:1rem;display:none;" onload="this.style.display='block'" onerror="this.style.display='none'" />
+    </div>
+  </div>
+  <div style="padding:1rem 1.2rem 1.2rem;">
+    <!-- Flight badge: update airline code and route -->
+    <div style="display:inline-flex;align-items:center;gap:.35rem;font-family:'IBM Plex Mono',monospace;font-size:.78rem;font-weight:600;background:#333333;color:#ffffff;border-radius:4px;padding:.25rem .6rem;margin-bottom:.75rem;"><span style="color:#29aae1;">{{AIRLINE_CODE}}</span> {{DAY1_ROUTE}}</div>
+    <!-- Bullet: flight description -->
+    <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
+      <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#29aae1;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">✈</span>
+      <span>{{DAY1_FLIGHT_DESCRIPTION}}</span>
+    </div>
+    <!-- Bullet: arrival dinner — remove block if not applicable -->
+    <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;border-top:1px dashed #dddddd;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
+      <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#e67e22;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">🍽</span>
+      <span>{{DAY1_DINNER_DESCRIPTION}}</span>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 2 — Pre-Con / Exploration Day -->
+<!-- Copy/paste additional day blocks as needed; update the vertical label color/text -->
+<div style="border:1px solid #dddddd;border-radius:6px;background:#ffffff;margin-bottom:1.6rem;overflow:hidden;">
+  <div style="display:flex;align-items:stretch;border-bottom:1px solid #dddddd;">
+    <div style="background:#333333;color:#ffffff;font-family:'IBM Plex Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);padding:.7rem .5rem;white-space:nowrap;">{{DAY2_LABEL}}</div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:.9rem 1.1rem;flex:1;min-width:0;">
+      <div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;line-height:1.3;color:#212121;">{{DAY2_TITLE}}</div>
+        <div style="font-size:.8rem;color:#888888;margin-top:.2rem;font-family:'IBM Plex Mono',monospace;">{{DAY2_SUBTITLE}}</div>
+      </div>
+      <img src="" alt="{{DAY2_LABEL}}" style="height:70px;width:110px;object-fit:cover;border-radius:4px;flex-shrink:0;margin-left:1rem;display:none;" onload="this.style.display='block'" onerror="this.style.display='none'" />
+    </div>
+  </div>
+  <div style="padding:1rem 1.2rem 1.2rem;">
+    <!-- Bullet 1: sightseeing/activity -->
+    <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
+      <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#27ae60;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">{{DAY2_BULLET1_ICON}}</span>
+      <span>{{DAY2_BULLET1_TEXT}}</span>
+    </div>
+    <!-- Bullet 2: lunch -->
+    <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;border-top:1px dashed #dddddd;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
+      <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#e67e22;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">🍽</span>
+      <span>{{DAY2_LUNCH_DESCRIPTION}}</span>
+    </div>
+    <!-- Bullet 3: speaker dinner / evening event -->
+    <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;border-top:1px dashed #dddddd;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
+      <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#29aae1;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">📊</span>
+      <span>{{DAY2_EVENING_DESCRIPTION}}</span>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 3 — Main Event / Conference Day -->
+<div style="border:1px solid #dddddd;border-radius:6px;background:#ffffff;margin-bottom:1.6rem;overflow:hidden;">
+  <div style="display:flex;align-items:stretch;border-bottom:1px solid #dddddd;">
+    <div style="background:#333333;color:#ffffff;font-family:'IBM Plex Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);padding:.7rem .5rem;white-space:nowrap;">{{DAY3_LABEL}}</div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:.9rem 1.1rem;flex:1;min-width:0;">
+      <div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;line-height:1.3;color:#212121;">{{DAY3_TITLE}}</div>
+        <div style="font-size:.8rem;color:#888888;margin-top:.2rem;font-family:'IBM Plex Mono',monospace;">{{DAY3_SUBTITLE}}</div>
+      </div>
+      <img src="" alt="{{DAY3_LABEL}}" style="height:70px;width:110px;object-fit:cover;border-radius:4px;flex-shrink:0;margin-left:1rem;display:none;" onload="this.style.display='block'" onerror="this.style.display='none'" />
+    </div>
+  </div>
+  <div style="padding:1rem 1.2rem 1.2rem;">
+    <!-- Dark conference card -->
+    <div style="background:linear-gradient(135deg,#333333 0%,#424242 100%);color:#ffffff;border-radius:6px;padding:1.2rem 1.3rem;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#29aae1;margin-bottom:.3rem;">{{CONF_TYPE_LABEL}}</div>
+      <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;line-height:1.3;margin-bottom:.5rem;color:#ffffff;">{{CONF_FULL_NAME}}</div>
+      <p style="font-size:.9rem;color:rgba(255,255,255,.82);margin-bottom:.5rem;font-family:'Inter',sans-serif;">{{CONF_DESCRIPTION}}</p>
+      <!-- Detail chips — add/remove as needed -->
+      <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0;font-family:'IBM Plex Mono',monospace;font-size:.75rem;">
+        <span style="background:rgba(0,188,212,.2);border:1px solid rgba(0,188,212,.4);border-radius:3px;padding:.15rem .5rem;color:#ffffff;">📍 {{CONF_VENUE}}</span>
+        <span style="background:rgba(0,188,212,.2);border:1px solid rgba(0,188,212,.4);border-radius:3px;padding:.15rem .5rem;color:#ffffff;">🗓 {{CONF_DATE}}</span>
+        <span style="background:rgba(0,188,212,.2);border:1px solid rgba(0,188,212,.4);border-radius:3px;padding:.15rem .5rem;color:#ffffff;">👥 Capacity: {{CONF_CAPACITY}}</span>
+        <span style="background:rgba(0,188,212,.2);border:1px solid rgba(0,188,212,.4);border-radius:3px;padding:.15rem .5rem;color:#ffffff;">🎟 {{CONF_FORMAT}}</span>
+        <span style="background:rgba(0,188,212,.2);border:1px solid rgba(0,188,212,.4);border-radius:3px;padding:.15rem .5rem;color:#ffffff;">🎤 My session: {{MY_SESSION_TITLE}}</span>
+      </div>
+      <p style="font-size:.9rem;color:rgba(255,255,255,.82);margin-bottom:.5rem;font-family:'Inter',sans-serif;">{{CONF_ORGANIZER_AND_SPEAKERS}}</p>
+      <p style="font-size:.9rem;margin:0;font-family:'Inter',sans-serif;"><a href="{{CONF_EVENT_URL}}" style="color:#29aae1;">→ Event page &amp; registration</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 4 — Return Travel Day -->
+<div style="border:1px solid #dddddd;border-radius:6px;background:#ffffff;margin-bottom:1.6rem;overflow:hidden;">
+  <div style="display:flex;align-items:stretch;border-bottom:1px solid #dddddd;">
+    <div style="background:#333333;color:#ffffff;font-family:'IBM Plex Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);padding:.7rem .5rem;white-space:nowrap;">{{DAY4_LABEL}}</div>
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:.9rem 1.1rem;flex:1;min-width:0;">
+      <div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;line-height:1.3;color:#212121;">{{DAY4_TITLE}}</div>
+        <div style="font-size:.8rem;color:#888888;margin-top:.2rem;font-family:'IBM Plex Mono',monospace;">{{DAY4_SUBTITLE}}</div>
+      </div>
+      <img src="" alt="{{DAY4_LABEL}}" style="height:70px;width:110px;object-fit:cover;border-radius:4px;flex-shrink:0;margin-left:1rem;display:none;" onload="this.style.display='block'" onerror="this.style.display='none'" />
+    </div>
+  </div>
+  <div style="padding:1rem 1.2rem 1.2rem;">
+    <!-- Flight badge: return route -->
+    <div style="display:inline-flex;align-items:center;gap:.35rem;font-family:'IBM Plex Mono',monospace;font-size:.78rem;font-weight:600;background:#333333;color:#ffffff;border-radius:4px;padding:.25rem .6rem;margin-bottom:.75rem;"><span style="color:#29aae1;">{{AIRLINE_CODE}}</span> {{DAY4_ROUTE}}</div>
+    <!-- Bullet 1: brunch -->
+    <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
+      <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#e67e22;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">🍳</span>
+      <span>{{DAY4_BRUNCH_DESCRIPTION}}</span>
+    </div>
+    <!-- Bullet 2: departure flight -->
+    <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;border-top:1px dashed #dddddd;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
+      <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#29aae1;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">✈</span>
+      <span>{{DAY4_DEPARTURE_DESCRIPTION}}</span>
+    </div>
+    <!-- Bullet 3: home stretch -->
+    <div style="display:flex;gap:.7rem;align-items:flex-start;padding:.45rem 0;border-top:1px dashed #dddddd;font-size:.95rem;font-family:'Inter',sans-serif;color:#212121;">
+      <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#8e44ad;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">🏠</span>
+      <span>{{DAY4_HOMECOMING_DESCRIPTION}}</span>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div style="text-align:center;font-size:.8rem;color:#888888;padding:1.5rem 1rem;border-top:1px solid #dddddd;font-family:'IBM Plex Mono',monospace;">
+  V-RodDBA · {{FOOTER_DATE}} · {{FOOTER_LOCATION}} &nbsp;|&nbsp; <a href="{{CONF_EVENT_URL}}" style="color:#29aae1;">{{FOOTER_EVENT_LABEL}}</a>
+</div>
