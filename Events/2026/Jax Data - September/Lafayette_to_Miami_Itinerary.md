@@ -1,3 +1,6 @@
+<!-- Source of truth for blog posts 1–3 (Lafayette→JAX, JAX→Miami, Miami→Key West→Miami).
+     See CLAUDE.md "Blog Post Cross-Reference" — changes here should be checked against those posts. -->
+
 # Lafayette, IN → Miami, FL — Road Trip Itinerary
 **Sep 14–18, 2026**
 
@@ -225,20 +228,20 @@ Cartel Baggers Key West Getaway · Peterson's H-D South · KSU 10:30 AM
 
 ## Harley-Davidson Dealer Stop Summary
 
-| Day | Date | Time | Dealership | Address | Hours |
-|-----|------|------|-----------|---------|-------|
-| 1 | Mon Sep 14 | ~1:30 PM ET | Harley-Davidson Louisville | 1700 Arthur St, Louisville KY | Mon 10 AM–6 PM ET |
-| 1 | Mon Sep 14 | ~3:00 PM ET | H-D Bowling Green | 251 Cumberland Trace Rd, Bowling Green KY | Mon 10 AM–6 PM ET |
-| 2 | Tue Sep 15 | ~11:30 AM ET | White Lightning H-D — Chattanooga | 7720 Lee Hwy, Chattanooga TN | Tue 9 AM–6 PM ET |
-| 2 | Tue Sep 15 | ~12:15 PM ET | Mountain Creek H-D — Dalton | 1002 Market St, Dalton GA | Tue 9 AM–6 PM ET |
-| 2 | Tue Sep 15 | ~1:50 PM ET | Southern Devil H-D — Cartersville | 2281 Highway 411 NE, Cartersville GA | Tue 11 AM–6 PM ET |
-| 2 | Tue Sep 15 | ~3:45 PM ET | Harley-Davidson of Macon | 5000 Mercer University Dr, Macon GA | Tue 9 AM–6 PM ET |
-| 3 | Wed Sep 16 | ~1:30 PM ET | Adamec H-D Baymeadows [BIKE] | 8909 Baymeadows Rd, Jacksonville FL | Wed 9 AM–6 PM ET |
-| 4 | Thu Sep 17 | ~11:05 AM ET | Adamec H-D St. Augustine I-95 [BIKE] | 380 Outlet Mall Blvd, St. Augustine FL | Thu 9 AM–6 PM ET |
-| 4 | Thu Sep 17 | ~12:10 PM ET | Teddy Morse's Daytona H-D [BIKE] | 1637 N US Hwy 1, Ormond Beach FL | Thu 9 AM–6 PM ET |
-| 4 | Thu Sep 17 | ~3:30 PM ET | Seminole Harley-Davidson [JETTA] | 620 Hickman Circle, Sanford FL | Thu 9 AM–7 PM ET |
+| Day | Date | Time | Dealership | Address | Hours | Pickup |
+|-----|------|------|-----------|---------|-------|--------|
+| 1 | Mon Sep 14 | ~1:30 PM ET | Harley-Davidson Louisville | 1700 Arthur St, Louisville KY | Mon 10 AM–6 PM ET | 🥃🎰 chip + glass |
+| 1 | Mon Sep 14 | ~3:00 PM ET | H-D Bowling Green | 251 Cumberland Trace Rd, Bowling Green KY | Mon 10 AM–6 PM ET | 🥃🎰 chip + glass |
+| 2 | Tue Sep 15 | ~11:30 AM ET | White Lightning H-D — Chattanooga | 7720 Lee Hwy, Chattanooga TN | Tue 9 AM–6 PM ET | 🥃🎰 chip + glass |
+| 2 | Tue Sep 15 | ~12:15 PM ET | Mountain Creek H-D — Dalton | 1002 Market St, Dalton GA | Tue 9 AM–6 PM ET | 🥃🎰 chip + glass |
+| 2 | Tue Sep 15 | ~1:50 PM ET | Southern Devil H-D — Cartersville | 2281 Highway 411 NE, Cartersville GA | Tue 11 AM–6 PM ET | 🥃🎰 chip + glass |
+| 2 | Tue Sep 15 | ~3:45 PM ET | Harley-Davidson of Macon | 5000 Mercer University Dr, Macon GA | Tue 9 AM–6 PM ET | 🥃🎰 chip + glass |
+| 3 | Wed Sep 16 | ~1:30 PM ET | Adamec H-D Baymeadows [BIKE] | 8909 Baymeadows Rd, Jacksonville FL | Wed 9 AM–6 PM ET | 🥃🎰🪙 chip + glass + coin |
+| 4 | Thu Sep 17 | ~11:05 AM ET | Adamec H-D St. Augustine I-95 [BIKE] | 380 Outlet Mall Blvd, St. Augustine FL | Thu 9 AM–6 PM ET | 🥃🎰🪙 chip + glass + coin |
+| 4 | Thu Sep 17 | ~12:10 PM ET | Teddy Morse's Daytona H-D [BIKE] | 1637 N US Hwy 1, Ormond Beach FL | Thu 9 AM–6 PM ET | 🥃🎰🪙 chip + glass + coin |
+| 4 | Thu Sep 17 | ~3:30 PM ET | Seminole Harley-Davidson [JETTA] | 620 Hickman Circle, Sanford FL | Thu 9 AM–7 PM ET | 🥃🎰 chip + glass |
 
-**Notes:** Bluegrass H-D (Louisville) closed Mondays — H-D Louisville (1700 Arthur St) is the Monday-open alternative. Day 3: bike unloaded at JAX hotel on arrival (~1 PM) for Adamec Baymeadows, loaded back up by 2:30 PM. Day 4: bike unloaded at Daytona, rides north to Adamec St. Augustine then back south for Daytona H-D + Ormond Loop, then loads back onto Jetta at Destination Daytona (~2:15 PM). Jetta takes US-17 S to Sanford (avoids Orlando). Adamec H-D is a family-owned group with locations in St. Augustine, Baymeadows, Orange Park, and Regency — all under the same ownership since 1931.
+**Notes:** Bluegrass H-D (Louisville) closed Mondays — H-D Louisville (1700 Arthur St) is the Monday-open alternative. Day 3: bike unloaded at JAX hotel on arrival (~1 PM) for Adamec Baymeadows, loaded back up by 2:30 PM. Day 4: bike unloaded at Daytona, rides north to Adamec St. Augustine then back south for Daytona H-D + Ormond Loop, then loads back onto Jetta at Destination Daytona (~2:15 PM). Jetta takes US-17 S to Sanford (avoids Orlando). Adamec H-D is a family-owned group with locations in St. Augustine, Baymeadows, Orange Park, and Regency — all under the same ownership since 1931. Pickup column: every dealer gets a shot glass + poker chip; add a challenge coin only for stops visited while actually riding the bike (see CLAUDE.md).
 
 ---
 
