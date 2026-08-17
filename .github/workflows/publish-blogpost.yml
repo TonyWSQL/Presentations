@@ -15,9 +15,12 @@ jobs:
       contents: write  # needed to commit published.json back to repo
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Code        
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.ADMIN_SYNC_TOKEN }} # Forces the workflow to push as an Admin
 
-      - name: Publish all posts
+      - name: Publish all posts      
         env:
           BLOGGER_BLOG_ID: ${{ secrets.BLOGGER_BLOG_ID }}
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
