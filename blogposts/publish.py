@@ -86,7 +86,7 @@ def main():
         "content": content,
         "labels": meta.get("labels", []),
     }
-    if "publishedAt" in meta:
+    if meta.get("publishedAt"):
         post_body["published"] = meta["publishedAt"]
     elif meta.get("updatePublishedDate"):
         from datetime import datetime, timezone

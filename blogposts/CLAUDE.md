@@ -130,16 +130,19 @@ How-tos, tooling write-ups, PowerShell/SQL walkthroughs. Structured as a section
 
 ## Metadata (`.json` sidecar)
 
-Each post has a paired `.json` file:
+Each post has a paired `.json` file. Every field publish.py understands should be listed explicitly, even when set to its default — don't omit a field to mean its default value:
 ```json
 {
   "title": "Post title",
   "labels": ["SQLFamily", "travel", "conference", ...],
   "publishedAt": "YYYY-MM-DDTHH:MM:SS-05:00",
+  "updatePublishedDate": false,
   "htmlFile": "filename.html"
 }
 ```
 
 Common labels: `DayOfData`, `dbatools`, `On The Road`, `PowerShell`, `SQL`, `SQLFamily`, `SQLSaturday`
 
-Omit `publishedAt` to publish immediately on push.
+Field notes (plain JSON — no comments — so `publish.py`'s `json.loads` and the GitHub Actions workflow keep working unmodified):
+- `publishedAt`: an ISO 8601 timestamp schedules the post for that time. Set to `null` (the default when a post has no scheduled date) to publish immediately on push — `publish.py` treats a falsy `publishedAt` the same as an omitted one.
+- `updatePublishedDate`: default `false`. Set to `true` to bump an already-published post's date to "now" on the next push (useful for republishing a substantially edited post). `publish.py` automatically resets it back to `false` after it fires, so don't rely on it staying `true` between runs.
