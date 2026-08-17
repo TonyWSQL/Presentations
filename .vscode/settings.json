@@ -6,5 +6,8 @@
             "description": "Project-specific words",
             "addWords": true
         }
+    },
+    "files.exclude": {
+        "**/__pycache__": true
     }
 }
