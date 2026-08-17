@@ -1,5 +1,7 @@
 {
   "title": "Hitting the Road to Albany",
-  "labels": ["DayOfData", "dbatools", "On The Road", "PowerShell", "SQL", "SQLFamily", "SQLSaturday"],  
+  "labels": ["DayOfData", "dbatools", "On The Road", "PowerShell", "SQL", "SQLFamily", "SQLSaturday"],
+  "publishedAt": null,
+  "updatePublishedDate": false,
   "htmlFile": "albany-august-2026.html"
 }
