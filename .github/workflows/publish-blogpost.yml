@@ -6,6 +6,7 @@ on:
     paths:
       - "blogposts/**/*.json"
       - "blogposts/**/*.html"
+      - "!blogposts/drafts/**"
 
 jobs:
   publish:
@@ -23,7 +24,7 @@ jobs:
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
         run: |
-          find blogposts -name "*.json" -not -name "published.json" | while read f; do
+          find blogposts -name "*.json" -not -name "published.json" -not -path "blogposts/drafts/*" | while read f; do
             echo "Publishing $f"
             python blogposts/publish.py "$f"
           done
