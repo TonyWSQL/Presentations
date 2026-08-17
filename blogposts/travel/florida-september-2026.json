@@ -1,7 +1,13 @@
 {
   "title": "Ten Days in Florida",
-  "labels": ["DayOfData", "On The Road", "SQL", "SQLFamily", "travel"],
+  "labels": [
+    "DayOfData",
+    "On The Road",
+    "SQL",
+    "SQLFamily",
+    "travel"
+  ],
   "publishedAt": "2026-08-10T09:00:00-04:00",
-  "updatePublishedDate": true,
+  "updatePublishedDate": false,
   "htmlFile": "florida-september-2026.html"
 }
