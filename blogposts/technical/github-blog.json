@@ -1,5 +1,7 @@
 {
   "title": "Automating Blogger Publishing with GitHub Actions",
   "labels": ["GitHub", "GitHub Actions", "Blogger", "Python", "Automation"],
+  "publishedAt": null,
+  "updatePublishedDate": false,
   "htmlFile": "github-blog.html"
 }
