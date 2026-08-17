@@ -77,7 +77,7 @@ def main():
     token = get_access_token()
 
     published = load_published()
-    # Use subfolder/stem as key (e.g. "travel/albany-august-2026") to avoid
+    # Use subfolder/stem as key (e.g. "travel/2026-08-albany") to avoid
     # collisions if posts in different folders share a filename.
     post_key = f"{meta_path.parent.name}/{meta_path.stem}"
 
