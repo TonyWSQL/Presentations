@@ -77,7 +77,8 @@ FROM master.sys.databases d
 LEFT JOIN sys.server_principals sl ON sl.sid = d.owner_sid
 WHERE d.database_id > 4;
 
-EXEC sp_executesql @sql;</pre>
+EXEC sp_executesql @sql;
+</pre>
 
   <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:1rem;">Once you've got a list of MISMATCH databases, the fix isn't reassigning ownership once — it's cycling it. Handing ownership to <code style="font-family:'JetBrains Mono',monospace;background:#f1f5f9;padding:.1rem .4rem;border-radius:4px;color:#1e293b;">sa</code> clears the stale metadata, and handing it right back rewrites a fresh, correct SID under the current server's context:</p>
 
