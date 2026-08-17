@@ -143,6 +143,12 @@ Each post has a paired `.json` file. Every field publish.py understands should b
 
 Common labels: `DayOfData`, `dbatools`, `On The Road`, `PowerShell`, `SQL`, `SQLFamily`, `SQLSaturday`
 
+### Filenames
+
+Travel posts and dated drafts (trips under `blogposts/drafts/`) use `YYYY-MM-description` for both the `.json` and `.html` (e.g. `2026-09-florida.json` / `.html`) so they sort chronologically in a file listing. Technical posts (how-tos, CVs, awards) aren't tied to a specific month and keep a plain `description.html` name. Non-dated drafts (e.g. a standalone troubleshooting post) also skip the date prefix.
+
+If a post is already published, renaming its files also requires updating its key in `blogposts/published.json` (keyed as `{folder}/{stem}`, see `publish.py`) so the next push updates the existing post instead of creating a duplicate.
+
 Field notes (plain JSON — no comments — so `publish.py`'s `json.loads` and the GitHub Actions workflow keep working unmodified):
 - `publishedAt`: an ISO 8601 timestamp schedules the post for that time. Set to `null` (the default when a post has no scheduled date) to publish immediately on push — `publish.py` treats a falsy `publishedAt` the same as an omitted one.
 - `updatePublishedDate`: default `false`. Set to `true` to bump an already-published post's date to "now" on the next push (useful for republishing a substantially edited post). `publish.py` automatically resets it back to `false` after it fires, so don't rely on it staying `true` between runs.
