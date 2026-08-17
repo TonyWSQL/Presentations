@@ -1,0 +1,137 @@
+<!-- Paste into Blogger HTML editor. All styles inline — no head/body/style tags. -->
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<!-- POST HEADER -->
+<div style="background:#1e293b;border-radius:8px;padding:2.5rem 2rem 2rem;margin-bottom:2rem;">
+  <p style="font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#10b981;margin:0 0 .75rem 0;">V-RodDBA · Troubleshooting</p>
+  <h2 style="font-family:'DM Sans',system-ui,sans-serif;font-size:2rem;font-weight:600;line-height:1.25;color:#f8fafc;margin:0 0 .75rem 0;">The SSMS db_owner Checkbox That Wouldn't Behave</h2>
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1rem;color:rgba(248,250,252,.65);margin:0;line-height:1.6;">Same server, same GUI, same new-user wizard — and yet some databases auto-check <code style="font-family:'JetBrains Mono',monospace;background:rgba(255,255,255,.08);padding:.1rem .4rem;border-radius:4px;color:#10b981;">db_owner</code> on you and some don't. Here's the SID mismatch actually causing it.</p>
+</div>
+
+<!-- INTRO -->
+<p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:1.5rem;">A client asked me a version of this question recently: "when creating new SQL users with SSMS, they're getting added to the db_owner role automatically?" My first instinct was to say no — SSMS maps new users to <code style="font-family:'JetBrains Mono',monospace;background:#f1f5f9;padding:.1rem .4rem;border-radius:4px;color:#1e293b;">public</code> by default, full stop. That's still true. But if you're staring at the User Mapping screen watching that db_owner box check itself before you've touched anything, something else is going on, and it's not random.</p>
+
+<p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:2rem;">What made this case interesting is that it wasn't happening on every database — just some of them, with no obvious pattern at first glance. Chasing that inconsistency down landed on a root cause that shows up constantly after restores and migrations: a binary SID that never got rewritten. Worth a full write-up, because "it works on some databases and not others" is exactly the kind of bug report that makes DBAs assume they're losing their minds.</p>
+
+<div style="background:#fffbeb;border:1px solid #fde68a;border-left:4px solid #f59e0b;border-radius:6px;padding:.9rem 1.1rem;margin:0 0 2rem 0;">
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;color:#78350f;margin:0;line-height:1.6;"><strong>A note on using sa:</strong> a few examples below reassign ownership to <code style="font-family:'JetBrains Mono',monospace;background:rgba(0,0,0,.06);padding:.1rem .35rem;border-radius:4px;">[sa]</code> for simplicity. <code style="font-family:'JetBrains Mono',monospace;background:rgba(0,0,0,.06);padding:.1rem .35rem;border-radius:4px;">sa</code> is a built-in account with unrestricted sysadmin rights, so making it a database owner widens your attack surface more than the fix actually requires, and plenty of shops disable it outright for exactly that reason. Follow your organization's security policy for database ownership rather than defaulting to sa.</p>
+</div>
+
+<!-- SECTION 1 -->
+<div style="margin-bottom:2rem;">
+  <h3 style="font-family:'DM Sans',system-ui,sans-serif;font-size:1.15rem;font-weight:600;color:#1e293b;margin:0 0 1rem 0;padding-bottom:.5rem;border-bottom:2px solid #10b981;">Ruling Out the Obvious Suspects</h3>
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:1rem;">Before you go digging into SIDs, check the two things that actually are documented SSMS behavior. First: a database with a blank or invalid owner — usually from a restore or attach where the original creator's login no longer exists — makes the User Mapping GUI glitch and pre-check db_owner for anyone you try to map. The fix is a one-liner:</p>
+
+  <pre style="font-family:'JetBrains Mono',monospace;font-size:.85rem;background:#0f172a;color:#e2e8f0;border-radius:6px;padding:1.1rem 1.25rem;overflow-x:auto;line-height:1.65;margin:.65rem 0;">USE [YourDatabaseName];
+GO
+ALTER AUTHORIZATION ON DATABASE::[YourDatabaseName] TO [sa];
+GO</pre>
+
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:1rem;">Second: check the <code style="font-family:'JetBrains Mono',monospace;background:#f1f5f9;padding:.1rem .4rem;border-radius:4px;color:#1e293b;">model</code> database. Anything configured there gets inherited by every new database on the instance, db_owner defaults included. If someone made a "helpful" change to model six months ago, this is where it comes back to bite you.</p>
+
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;color:#64748b;margin:0;line-height:1.6;font-style:italic;">In this case, one orphaned database turned up — fixed, confirmed, done. But the client came back with: other databases were still doing it, and not consistently.</p>
+</div>
+
+<!-- SECTION 2 -->
+<div style="margin-bottom:2rem;">
+  <h3 style="font-family:'DM Sans',system-ui,sans-serif;font-size:1.15rem;font-weight:600;color:#1e293b;margin:0 0 1rem 0;padding-bottom:.5rem;border-bottom:2px solid #10b981;">Why It's Inconsistent Even on Databases You Own</h3>
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:1rem;">Here's where it got genuinely strange. The client owned nearly every database on the instance under their own Windows login — one exception was owned by a disabled <code style="font-family:'JetBrains Mono',monospace;background:#f1f5f9;padding:.1rem .4rem;border-radius:4px;color:#1e293b;">sa</code> account. That one behaved fine. The rest, all owned by the same account, split roughly down the middle between "behaves" and "checks the box." Same owner, same login, same SSMS build. Three mechanics explain the split:</p>
+
+  <div style="display:flex;flex-direction:column;gap:.5rem;margin-bottom:1rem;">
+    <div style="display:flex;gap:.85rem;align-items:flex-start;">
+      <span style="flex-shrink:0;font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:600;background:#10b981;color:#fff;border-radius:50%;width:1.5rem;height:1.5rem;display:inline-flex;align-items:center;justify-content:center;">1</span>
+      <span style="font-family:'Source Serif 4',Georgia,serif;font-size:1rem;color:#334155;line-height:1.6;padding-top:.05rem;">AD group ownership vs. an individual login. If a database was created or restored under an AD group context (<code style="font-family:'JetBrains Mono',monospace;background:#f1f5f9;padding:.1rem .3rem;border-radius:4px;color:#1e293b;">DOMAIN\Domain_DBAs</code>) rather than one person's account, SSMS can't cleanly resolve individual permissions against a group owner and misbehaves.</span>
+    </div>
+    <div style="display:flex;gap:.85rem;align-items:flex-start;">
+      <span style="flex-shrink:0;font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:600;background:#10b981;color:#fff;border-radius:50%;width:1.5rem;height:1.5rem;display:inline-flex;align-items:center;justify-content:center;">2</span>
+      <span style="font-family:'Source Serif 4',Georgia,serif;font-size:1rem;color:#334155;line-height:1.6;padding-top:.05rem;">SIDs out of sync between server and database metadata. The owner's display name matches everywhere in the GUI, but the binary SID backing that name doesn't — a leftover from a migration or restore. This turned out to be the actual cause here.</span>
+    </div>
+    <div style="display:flex;gap:.85rem;align-items:flex-start;">
+      <span style="flex-shrink:0;font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:600;background:#10b981;color:#fff;border-radius:50%;width:1.5rem;height:1.5rem;display:inline-flex;align-items:center;justify-content:center;">3</span>
+      <span style="font-family:'Source Serif 4',Georgia,serif;font-size:1rem;color:#334155;line-height:1.6;padding-top:.05rem;">Contained database settings. A contained database bypasses the instance-level security architecture entirely, which changes how ownership resolves and can produce the same symptom for unrelated reasons.</span>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3 -->
+<div style="margin-bottom:2rem;">
+  <h3 style="font-family:'DM Sans',system-ui,sans-serif;font-size:1.15rem;font-weight:600;color:#1e293b;margin:0 0 1rem 0;padding-bottom:.5rem;border-bottom:2px solid #10b981;">The Smoking Gun</h3>
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:1rem;">Every database triggering the bug traced back to option 2: the database-level <code style="font-family:'JetBrains Mono',monospace;background:#f1f5f9;padding:.1rem .4rem;border-radius:4px;color:#1e293b;">dbo</code> user still carried the binary SID from the server it was originally restored or attached from. SSMS shows the correct display name, because it resolves the SID against Active Directory, not against the local instance — but underneath, <code style="font-family:'JetBrains Mono',monospace;background:#f1f5f9;padding:.1rem .4rem;border-radius:4px;color:#1e293b;">master.sys.databases.owner_sid</code> and <code style="font-family:'JetBrains Mono',monospace;background:#f1f5f9;padding:.1rem .4rem;border-radius:4px;color:#1e293b;">sys.database_principals.sid</code> (for the <code style="font-family:'JetBrains Mono',monospace;background:#f1f5f9;padding:.1rem .4rem;border-radius:4px;color:#1e293b;">dbo</code> row) don't agree. The user-mapping logic hits that mismatch and fails open, pre-checking db_owner as a safety default.</p>
+
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:1rem;">You can confirm it across every database on the instance in one pass:</p>
+
+  <pre style="font-family:'JetBrains Mono',monospace;font-size:.85rem;background:#0f172a;color:#e2e8f0;border-radius:6px;padding:1.1rem 1.25rem;overflow-x:auto;line-height:1.65;margin:.65rem 0;">DECLARE @sql NVARCHAR(MAX) = N'';
+
+SELECT @sql += N'
+USE [' + d.name + N'];
+SELECT DB_NAME() AS DatabaseName,
+       CASE
+         WHEN sp.sid IS NULL THEN ''MISSING dbo PRINCIPAL''
+         WHEN sl.is_disabled = 1 THEN ''OWNER IS DISABLED''
+         WHEN d.owner_sid <> sp.sid THEN ''MISMATCH: Master SID <> Database SID''
+         ELSE ''VALID''
+       END AS Status,
+       d.owner_sid AS MasterSid,
+       sp.sid AS DatabaseSid;'
+FROM master.sys.databases d
+LEFT JOIN sys.server_principals sl ON sl.sid = d.owner_sid
+WHERE d.database_id > 4;
+
+EXEC sp_executesql @sql;</pre>
+
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:1rem;">Once you've got a list of MISMATCH databases, the fix isn't reassigning ownership once — it's cycling it. Handing ownership to <code style="font-family:'JetBrains Mono',monospace;background:#f1f5f9;padding:.1rem .4rem;border-radius:4px;color:#1e293b;">sa</code> clears the stale metadata, and handing it right back rewrites a fresh, correct SID under the current server's context:</p>
+
+  <pre style="font-family:'JetBrains Mono',monospace;font-size:.85rem;background:#0f172a;color:#e2e8f0;border-radius:6px;padding:1.1rem 1.25rem;overflow-x:auto;line-height:1.65;margin:.65rem 0;">USE [YourDatabaseName];
+GO
+ALTER AUTHORIZATION ON DATABASE::[YourDatabaseName] TO [sa];
+GO
+ALTER AUTHORIZATION ON DATABASE::[YourDatabaseName] TO [DOMAIN\YourLogin];
+GO</pre>
+
+  <p style="font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;color:#64748b;margin:0;line-height:1.6;font-style:italic;">Run the validation query again afterward. MISMATCH rows should convert to VALID. Anything still flagged as OWNER IS DISABLED is a database legitimately owned by a disabled sa account — normal in locked-down environments, and not the bug you're chasing.</p>
+</div>
+
+<!-- TABLE -->
+<div style="margin-bottom:2rem;">
+  <h3 style="font-family:'DM Sans',system-ui,sans-serif;font-size:1.15rem;font-weight:600;color:#1e293b;margin:0 0 1rem 0;padding-bottom:.5rem;border-bottom:2px solid #10b981;">Reading the Validation Report</h3>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;overflow:hidden;">
+    <table style="width:100%;border-collapse:collapse;font-family:'JetBrains Mono',monospace;font-size:.85rem;">
+      <thead>
+        <tr style="background:#1e293b;">
+          <th style="text-align:left;padding:.6rem 1rem;color:#94a3b8;font-weight:600;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;">Status</th>
+          <th style="text-align:left;padding:.6rem 1rem;color:#94a3b8;font-weight:600;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;">What It Means</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-top:1px solid #e2e8f0;">
+          <td style="padding:.65rem 1rem;color:#10b981;font-weight:600;">VALID</td>
+          <td style="padding:.65rem 1rem;color:#334155;font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;">Owner SID matches on both ends. SSMS will behave normally.</td>
+        </tr>
+        <tr style="border-top:1px solid #e2e8f0;background:#f1f5f9;">
+          <td style="padding:.65rem 1rem;color:#10b981;font-weight:600;">MISMATCH</td>
+          <td style="padding:.65rem 1rem;color:#334155;font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;">The bug. Server and database-level SIDs disagree — usually a leftover from a restore or attach. Cycle ownership through sa to fix.</td>
+        </tr>
+        <tr style="border-top:1px solid #e2e8f0;">
+          <td style="padding:.65rem 1rem;color:#10b981;font-weight:600;">MISSING dbo PRINCIPAL</td>
+          <td style="padding:.65rem 1rem;color:#334155;font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;">No valid owner at all. Assign one explicitly with ALTER AUTHORIZATION.</td>
+        </tr>
+        <tr style="border-top:1px solid #e2e8f0;background:#f1f5f9;">
+          <td style="padding:.65rem 1rem;color:#10b981;font-weight:600;">OWNER IS DISABLED</td>
+          <td style="padding:.65rem 1rem;color:#334155;font-family:'Source Serif 4',Georgia,serif;font-size:.9rem;">Database is owned by a disabled login (often sa). Perfectly legal, and won't trigger the bug.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- CLOSING -->
+<p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:.75rem;">I checked whether this got fixed in a newer SSMS release. It hasn't — not even in SSMS 22. Microsoft treats this as a downstream consequence of a metadata query failing, not a UI bug worth patching directly: when the background query can't resolve a clean owner context, the interface fails open and defaults to the more permissive option. That's not going to change, so the fix has to live in your process, not in the tool.</p>
+
+<p style="font-family:'Source Serif 4',Georgia,serif;font-size:1.05rem;line-height:1.75;color:#334155;margin-bottom:2rem;">The practical takeaway: add <code style="font-family:'JetBrains Mono',monospace;background:#f1f5f9;padding:.1rem .4rem;border-radius:4px;color:#1e293b;">ALTER AUTHORIZATION ON DATABASE::[DBName] TO [ValidOwner];</code> to every post-restore and post-migration checklist, right next to the usual orphaned-user cleanup. A stale SID is a lot like a stale timing chain on a bike — it won't announce itself until you're already relying on it, and by then you're troubleshooting under load instead of at your own pace.</p>
+
+<!-- FOOTER -->
+<div style="border-top:1px solid #e2e8f0;padding-top:1.25rem;display:flex;align-items:center;gap:.6rem;">
+  <span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#94a3b8;">V-RodDBA</span>
+  <span style="color:#e2e8f0;">·</span>
+  <span style="font-family:'JetBrains Mono',monospace;font-size:.75rem;color:#94a3b8;">August 13, 2026</span>
+</div>
