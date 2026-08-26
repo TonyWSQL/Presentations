@@ -1,7 +1,16 @@
 {
   "title": "Speaking CV",
-  "labels": ["Speaking", "SQL", "PowerShell", "dbatools", "SQLSaturday", "DayOfData", "SQLFamily", "Sessionize"],
+  "labels": [
+    "Speaking",
+    "SQL",
+    "PowerShell",
+    "dbatools",
+    "SQLSaturday",
+    "DayOfData",
+    "SQLFamily",
+    "Sessionize"
+  ],
   "publishedAt": null,
-  "updatePublishedDate": true,
+  "updatePublishedDate": false,
   "htmlFile": "speaking-cv.html"
 }
