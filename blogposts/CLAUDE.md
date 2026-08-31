@@ -109,10 +109,13 @@ Trip recaps and conference road reports. Structured as day-by-day itinerary card
 - Structure:
   1. **Masthead** — brand tagline, post title, date + event name
   2. **Route Ribbon** — airport code badges with arrows
-  3. **Intro paragraph** — upright (non-italic) pull quote style; opens with `BEGIN TRANSACTION`. Italic Playfair Display at this size makes some letterforms (e.g. Q) hard to read, so intro/closing pull-quote paragraphs stay upright — the masthead's single-word `<em>` headline accent is the only italic Playfair Display use left on the blog.
-  4. **Day cards** — one per day, vertical date label sidebar, activity bullet rows inside
-  5. **Footer** — brand · date · event link
-  6. Last activity line of final day card closes with `COMMIT TRAN`
+  3. **Intro paragraph** — plain upright (non-italic) paragraph, no border/pull-quote styling; opens with `BEGIN TRANSACTION`. Italic Playfair Display at this size makes some letterforms (e.g. Q) hard to read, so intro/closing paragraphs stay upright — the masthead's single-word `<em>` headline accent is the only italic Playfair Display use left on the blog.
+  4. **Stats Bar** (optional) — row of small stat tiles (bordered `#f9f9f9` boxes) after the intro: e.g. flights/miles, days on the road, presentations. Swap the primary transport tile's wording to match the trip — "✈ Flights" for a flying trip, "🚗 Miles, 4 Wheels" for a road trip. Include the "🏍 Miles, 2 Wheels" tile only when a motorcycle leg is part of the trip; omit it otherwise. Other tiles (dealers visited, etc.) are trip-specific — add/remove as needed.
+  5. **Day cards** — one per day, vertical date label sidebar, activity bullet rows inside
+  6. **Thank You** — bordered `#f9f9f9` box, 🙏 icon, thanking organizers/hosts by name
+  7. **Photo Album** — bordered `#f9f9f9` box, 📷 icon, link to the trip's photo album
+  8. **Closing paragraph** — same plain style as the intro, closes with `COMMIT TRAN`
+  9. **Footer** — brand · date · event link
 
 ### Technical (`technical-template.html`)
 How-tos, tooling write-ups, PowerShell/SQL walkthroughs. Structured as a sectioned article.

@@ -26,7 +26,34 @@
 </div>
 
 <!-- INTRO — one or two punchy sentences teasing the trip -->
-<p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#555555;border-left:3px solid #29aae1;padding-left:1rem;margin-bottom:2rem;line-height:1.6;">{{INTRO_PARAGRAPH}}</p>
+<p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#555555;margin-bottom:1.6rem;line-height:1.6;">{{INTRO_PARAGRAPH}}</p>
+
+<!-- STATS BAR — optional row of stat tiles; add/remove tiles as needed for the trip -->
+<div style="display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:1.8rem;">
+  <!-- Primary transport tile: use flight count/legs for a flying trip ("✈ Flights"), or miles driven for a road trip ("🚗 Miles, 4 Wheels") -->
+  <div style="flex:1;min-width:110px;background:#f9f9f9;border:1px solid #dddddd;border-radius:6px;padding:.9rem 1rem;text-align:center;">
+    <div style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#29aae1;">{{STAT1_VALUE}}</div>
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:#888888;">{{STAT1_LABEL}}</div>
+  </div>
+  <!-- Motorcycle miles tile — include ONLY when a motorcycle leg is part of the trip; delete this block otherwise -->
+  <div style="flex:1;min-width:110px;background:#f9f9f9;border:1px solid #dddddd;border-radius:6px;padding:.9rem 1rem;text-align:center;">
+    <div style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#e8800a;">{{STAT_MOTO_VALUE}}</div>
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:#888888;">🏍 Miles, 2 Wheels</div>
+  </div>
+  <!-- Optional trip-specific tile, e.g. H-D Dealers visited — delete if not applicable -->
+  <div style="flex:1;min-width:110px;background:#f9f9f9;border:1px solid #dddddd;border-radius:6px;padding:.9rem 1rem;text-align:center;">
+    <div style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#29aae1;">{{STAT2_VALUE}}</div>
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:#888888;">{{STAT2_LABEL}}</div>
+  </div>
+  <div style="flex:1;min-width:110px;background:#f9f9f9;border:1px solid #dddddd;border-radius:6px;padding:.9rem 1rem;text-align:center;">
+    <div style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#29aae1;">{{STAT3_VALUE}}</div>
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:#888888;">Days on the Road</div>
+  </div>
+  <div style="flex:1;min-width:120px;background:#f9f9f9;border:1px solid #dddddd;border-radius:6px;padding:.9rem 1rem;text-align:center;">
+    <div style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#29aae1;">{{STAT4_VALUE}}</div>
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:#888888;">{{STAT4_LABEL}}</div>
+  </div>
+</div>
 
 <!-- DAY 1 — Travel Day (outbound) -->
 <div style="border:1px solid #dddddd;border-radius:6px;background:#ffffff;margin-bottom:1.6rem;overflow:hidden;">
@@ -153,6 +180,20 @@
     </div>
   </div>
 </div>
+
+<!-- THANK YOU -->
+<div style="border:1px solid #dddddd;border-radius:6px;background:#f9f9f9;padding:1rem 1.2rem;margin-bottom:1.6rem;display:flex;align-items:flex-start;gap:.75rem;">
+  <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#29aae1;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;margin-top:.1rem;">🙏</span>
+  <span style="font-family:'Inter',sans-serif;font-size:.95rem;color:#212121;">{{THANKYOU_TEXT}}</span>
+</div>
+
+<!-- PHOTO ALBUM -->
+<div style="border:1px solid #dddddd;border-radius:6px;background:#f9f9f9;padding:1rem 1.2rem;margin-bottom:1.6rem;display:flex;align-items:center;gap:.75rem;">
+  <span style="flex-shrink:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#29aae1;color:#ffffff;display:inline-flex;align-items:center;justify-content:center;font-size:.75rem;">📷</span>
+  <span style="font-family:'Inter',sans-serif;font-size:.95rem;color:#212121;">All the photos from the trip: <a href="{{PHOTO_ALBUM_URL}}" style="color:#29aae1;">{{PHOTO_ALBUM_LABEL}}</a></span>
+</div>
+
+<p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#555555;margin-bottom:1.6rem;line-height:1.6;"><code>COMMIT TRAN</code></p>
 
 <!-- FOOTER -->
 <div style="text-align:center;font-size:.8rem;color:#888888;padding:1.5rem 1rem;border-top:1px solid #dddddd;font-family:'IBM Plex Mono',monospace;">
