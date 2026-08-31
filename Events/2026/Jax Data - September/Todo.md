@@ -17,4 +17,9 @@
 
 ## 📋 Separate Deliverables
 
-- [ ] **Return trip itinerary** — Key West → Lafayette after Cartel Baggers (Sun Sep 20 departure) · Keep as a separate document to avoid cluttering this one
+- [x] **Return trip itinerary** — `KW_to_Lafayette_Itinerary.pdf` + `KW_to_Lafayette_Itinerary.md` · Gulf Coast route · Sep 20–22 · ~1,485 mi · 4 H-D dealers ✓
+
+## 🔴 Return Trip — Hotels Still to Book
+
+- [x] **Book Miami return night (Hampton Inn Kendall, Sun Sep 20)** — 14060 SW 138th Ave, Miami FL 33186 · Check-in 3:00 PM Sep 20 · Check-out 11:00 AM Sep 21 ✓
+- [x] **Book Macon return night (Hampton Inn I-475, Mon Sep 21)** — 5010 Eisenhower Pkwy, Macon GA 31206 · Check-in 4:00 PM Sep 21 · Check-out 11:00 AM Sep 22 ✓
