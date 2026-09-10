@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Build and Push Ruleset
         env:
@@ -46,7 +46,7 @@ jobs:
           // Send payload to Cloudflare Ruleset API
           const payload = { rules: rules };
           
-          fetch(`https://cloudflare.com{process.env.CF_ZONE_ID}/rulesets/phases/http_request_dynamic_redirect/entrypoint`, {
+          fetch(`https://api.cloudflare.com/client/v4/zones/${process.env.CF_ZONE_ID}/rulesets/phases/http_request_dynamic_redirect/entrypoint`, {
             method: "PUT",
             headers: {
               "Authorization": `Bearer ${process.env.CF_API_TOKEN}`,
