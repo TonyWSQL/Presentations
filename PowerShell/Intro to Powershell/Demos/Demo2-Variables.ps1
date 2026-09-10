@@ -21,7 +21,7 @@ Import-Module dbatools
     $datedt.AddDays(1)
     $dateDT.DayOfWeek
 
-    [DbaInstance]$instanceDBA = 'INLAP-WKS1100\SQL2022'
+    ([DbaInstance]$instanceDBA = 'INLAP-WKS1100\SQL2022')
     $instanceDBA
     $instancedba.GetType()
 #endregion
