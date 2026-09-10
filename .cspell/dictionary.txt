@@ -12,6 +12,7 @@ CASSUG
 Cataluna
 ceviche
 Ciderworks
+DataShepherd
 Daytona
 dbaduck
 dbatools
@@ -81,6 +82,7 @@ thedaxshepherd
 thesqlagentman
 Tomoka
 Tropea
+V-RodDBASQL
 voiceofthedba
 Wagyu
 Waverly
