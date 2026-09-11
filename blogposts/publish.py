@@ -104,6 +104,11 @@ def main():
         save_published(published)
         print(f"Published post: {result['url']}")
 
+    # Record the live permalink in the post's own metadata file so it's
+    # easy to find later without re-querying the API.
+    meta["permalink"] = result["url"]
+    meta_path.write_text(json.dumps(meta, indent=2))
+
     # Reset updatePublishedDate to false after publish so future pushes
     # don't keep bumping the date.
     if meta.get("updatePublishedDate"):
