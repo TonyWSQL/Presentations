@@ -1,7 +1,14 @@
 {
   "title": "Nashville to Pittsburgh, the Long Way",
-  "labels": ["On The Road", "DayOfData", "SQLSaturday", "PowerShell", "SQLFamily"],
+  "labels": [
+    "On The Road",
+    "DayOfData",
+    "SQLSaturday",
+    "PowerShell",
+    "SQLFamily"
+  ],
   "publishedAt": "2026-09-01T08:00:00-04:00",
   "updatePublishedDate": false,
-  "htmlFile": "2026-10-nashville-to-pittsburgh.html"
+  "htmlFile": "2026-10-nashville-to-pittsburgh.html",
+  "permalink": "https://blog.v-roddba.com/2026/09/nashville-to-pittsburgh-long-way.html"
 }

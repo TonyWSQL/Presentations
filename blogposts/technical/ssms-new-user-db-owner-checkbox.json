@@ -1,7 +1,12 @@
 {
   "title": "The SSMS db_owner Checkbox That Wouldn't Behave",
-  "labels": ["SQL", "SSMS", "Troubleshooting"],
+  "labels": [
+    "SQL",
+    "SSMS",
+    "Troubleshooting"
+  ],
   "publishedAt": null,
   "updatePublishedDate": false,
-  "htmlFile": "ssms-new-user-db-owner-checkbox.html"
+  "htmlFile": "ssms-new-user-db-owner-checkbox.html",
+  "permalink": "https://blog.v-roddba.com/2026/08/the-ssms-dbowner-checkbox-that-wouldnt_01106903757.html"
 }

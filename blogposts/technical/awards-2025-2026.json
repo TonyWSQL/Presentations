@@ -1,7 +1,14 @@
 {
   "title": "Three Badges and a Lot of Help",
-  "labels": ["SQLFamily", "Sessionize", "Redgate", "Speaking", "Community"],
+  "labels": [
+    "SQLFamily",
+    "Sessionize",
+    "Redgate",
+    "Speaking",
+    "Community"
+  ],
   "publishedAt": "2026-09-03T08:00:00-04:00",
   "updatePublishedDate": false,
-  "htmlFile": "awards-2025-2026.html"
+  "htmlFile": "awards-2025-2026.html",
+  "permalink": "https://blog.v-roddba.com/2026/09/three-badges-and-lot-of-help.html"
 }

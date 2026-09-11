@@ -1,7 +1,16 @@
 {
   "title": "Hitting the Road to Albany",
-  "labels": ["DayOfData", "dbatools", "On The Road", "PowerShell", "SQL", "SQLFamily", "SQLSaturday"],
+  "labels": [
+    "DayOfData",
+    "dbatools",
+    "On The Road",
+    "PowerShell",
+    "SQL",
+    "SQLFamily",
+    "SQLSaturday"
+  ],
   "publishedAt": null,
   "updatePublishedDate": false,
-  "htmlFile": "2026-08-albany.html"
+  "htmlFile": "2026-08-albany.html",
+  "permalink": "https://blog.v-roddba.com/2026/07/hitting-road-to-albany.html"
 }

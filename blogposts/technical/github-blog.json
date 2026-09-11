@@ -1,7 +1,14 @@
 {
   "title": "Automating Blogger Publishing with GitHub Actions",
-  "labels": ["GitHub", "GitHub Actions", "Blogger", "Python", "Automation"],
+  "labels": [
+    "GitHub",
+    "GitHub Actions",
+    "Blogger",
+    "Python",
+    "Automation"
+  ],
   "publishedAt": null,
   "updatePublishedDate": false,
-  "htmlFile": "github-blog.html"
+  "htmlFile": "github-blog.html",
+  "permalink": "https://blog.v-roddba.com/2026/07/automating-blogger-publishing-with.html"
 }
