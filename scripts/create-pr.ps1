@@ -24,6 +24,16 @@ try {
     if ($PrOutput -match "https://github.com") {
         Write-Host "✅ Pull Request created successfully!" -ForegroundColor Green
         Write-Host "🔗 Link: $PrOutput" -ForegroundColor Cyan
+
+        Write-Host "🔄 Enabling auto-merge (rebase) for the PR..." -ForegroundColor Cyan
+        $MergeOutput = gh pr merge $CurrentBranch --rebase --auto 2>&1
+
+        if ($LASTEXITCODE -eq 0) {
+            Write-Host "✅ Auto-merge enabled. PR will rebase & merge automatically once checks pass and there are no conflicts." -ForegroundColor Green
+        } else {
+            Write-Host "⚠️ Could not enable auto-merge:" -ForegroundColor Yellow
+            Write-Host "$MergeOutput" -ForegroundColor Yellow
+        }
     } else {
         # If no link was generated, it failed (e.g., Not logged in / Outage)
         Write-Host "❌ GitHub CLI failed to create the PR:" -ForegroundColor Red
