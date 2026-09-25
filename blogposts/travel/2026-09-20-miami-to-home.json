@@ -1,7 +1,10 @@
 {
   "title": "The Long Way Home",
-  "labels": ["On The Road"],
+  "labels": [
+    "On The Road"
+  ],
   "publishedAt": "2026-09-25T08:00:00-04:00",
   "updatePublishedDate": false,
-  "htmlFile": "2026-09-20-miami-to-home.html"
+  "htmlFile": "2026-09-20-miami-to-home.html",
+  "permalink": "https://blog.v-roddba.com/2026/09/the-long-way-home.html"
 }
