@@ -84,7 +84,13 @@ Posts are self-contained HTML snippets for Blogger's HTML editor. Key rules:
 - Font stack: `'Playfair Display'` (headers/italic quotes), `'IBM Plex Mono'` (labels/code/metadata), `'Inter'` (body text)
 - Brand color: `#29aae1` (blue) for accents, links, highlights
 - Dark accent: `#333333` for masthead backgrounds and day-label sidebars
-- Day cards: bordered `div` with a vertical rotated day label on the left; header contains an `<img>` placeholder for a day photo (110×70px, `object-fit:cover`, hidden until `src` resolves via `display:none` / `onload` / `onerror`)
+- Day cards: bordered `div` with a vertical rotated day label on the left; header is a flex row (`position:relative`, `padding:.9rem 1.1rem`) containing the day's title/subtitle text and an `<img>` for a day photo
+  - Image is absolutely positioned (`position:absolute;top:.9rem;right:1.1rem`) so its top/right margins match the row's own padding; height is `calc(100% - 1.8rem)` (row height minus top+bottom padding) with `width:auto` to preserve the source image's native aspect ratio — do not hardcode both width and height, as that distorts or crops non-16:9 source images
+  - Must explicitly override Blogger's theme-injected `.post-body img` defaults that otherwise add an unwanted white frame: `background:transparent;border:none;padding:0;box-shadow:none`
+  - Give the row a `min-height` (e.g. 80px) and `box-sizing:border-box` so there's enough vertical room for the image before text content forces a larger height
+  - The text block needs `padding-right` roughly matching the image's rendered width so it doesn't run under the image
+  - Hidden until `src` resolves via `display:none` / `onload` / `onerror`
+  - Canonical example: `blogposts/travel/2026-10-nashville-to-pittsburgh.html`, Day 1 (Wednesday) card
 - Activity rows: flex layout with a colored circle icon + text
 - Icon circle colors by activity type:
   - ✈ Travel: `#29aae1`
