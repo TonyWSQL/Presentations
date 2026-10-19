@@ -15,7 +15,7 @@ The blog lives at Blogger under the brand **V-RodDBA on 2 wheels... until tempdb
 - First-person, conversational; reads like a road trip journal with a DBA filter
 - SQL/data puns are welcome but must feel earned, not forced — one or two per post max
 - Motorcycle references add flavor but don't overpower; the V-Rod is a personality detail, not the main story
-- The #SQLFamily community is central — name people, link their blogs, celebrate them
+- The #SQLFamily community is central — name people, link their blogs, celebrate them. Look up names and URLs in `blogposts/people.md` first; add new people there as they come up
 - Humor lands dry. Avoid exclamation points everywhere; save them for genuine excitement.
 
 ---
