@@ -1,7 +1,13 @@
 {
   "title": "CincyDATA Is Back",
-  "labels": ["CincyDATA", "SQLFamily", "Cincinnati", "user group"],
+  "labels": [
+    "CincyDATA",
+    "SQLFamily",
+    "Cincinnati",
+    "user group"
+  ],
   "publishedAt": null,
   "updatePublishedDate": false,
-  "htmlFile": "cincydata.html"
+  "htmlFile": "cincydata.html",
+  "permalink": "https://blog.v-roddba.com/2026/10/cincydata-is-back.html"
 }
