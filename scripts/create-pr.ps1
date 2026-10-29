@@ -1,4 +1,9 @@
+Clear-Host
 $ErrorActionPreference = "Stop"
+
+# PR merge polling settings
+$PrPollIntervalSeconds = 5
+$PrTimeoutMinutes = 5
 
 $CurrentBranch = (git branch --show-current).Trim()
 
@@ -30,11 +35,34 @@ try {
 
         if ($LASTEXITCODE -eq 0) {
             Write-Host "✅ Auto-merge enabled. PR will rebase & merge automatically once checks pass and there are no conflicts." -ForegroundColor Green
-        } else {
+
+            Write-Host "⏳ Waiting for the PR to merge..." -ForegroundColor Cyan
+            $Deadline = (Get-Date).AddMinutes($PrTimeoutMinutes)
+            $PrState = ""
+
+            while ((Get-Date) -lt $Deadline) {
+                $PrState = (gh pr view $CurrentBranch --json state --jq ".state" 2>&1 | Out-String).Trim()
+                if ($PrState -eq "MERGED" -or $PrState -eq "CLOSED") { break }
+                Start-Sleep -Seconds $PrPollIntervalSeconds
+            }
+
+            if ($PrState -eq "MERGED") {
+                Write-Host "✅ PR merged. Syncing branches..." -ForegroundColor Green
+                . "$PSScriptRoot\sync-branches.ps1"
+            }
+            elseif ($PrState -eq "CLOSED") {
+                Write-Host "❌ PR was closed without merging. Skipping branch sync." -ForegroundColor Red
+            }
+            else {
+                Write-Host "⚠️ PR not merged after $PrTimeoutMinutes minutes (state: $PrState). Skipping branch sync." -ForegroundColor Yellow
+            }
+        }
+        else {
             Write-Host "⚠️ Could not enable auto-merge:" -ForegroundColor Yellow
             Write-Host "$MergeOutput" -ForegroundColor Yellow
         }
-    } else {
+    }
+    else {
         # If no link was generated, it failed (e.g., Not logged in / Outage)
         Write-Host "❌ GitHub CLI failed to create the PR:" -ForegroundColor Red
         Write-Host "$PrOutput" -ForegroundColor Yellow
@@ -42,4 +70,6 @@ try {
 }
 catch {
     Write-Host "❌ Script encountered a critical error processing the PR." -ForegroundColor Red
+    Write-Host "$($_.Exception.Message)" -ForegroundColor Yellow
+    Write-Host "$($_.InvocationInfo.PositionMessage)" -ForegroundColor DarkGray
 }
