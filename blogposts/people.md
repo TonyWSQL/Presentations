@@ -13,8 +13,13 @@ Check here before writing any post that names someone from the #SQLFamily. Link 
 | Chris Hyde | https://www.hydrate.consulting/ | |
 | Andy Yun | https://sqlbek.wordpress.com/ | SQLBek. Albany post links the blog without a name, so confirm it's his |
 | Joey D'Antoni | https://joeydantoni.com/ | PASS Summit pre-con speaker (Learning the Cloud) |
+| Deborah Melkin | https://debthedba.wordpress.com/ | Deb the DBA. SQL Saturday Albany dinner and cider hangout |
+| Kevin Feasel | https://www.catallaxyservices.com/ | Catallaxy Services. PNW Day of Data pre-con speaker (AI at the Gates) |
+| Ben Weissman | https://www.bweissman.de/ | PASS Summit Community Kickoff & Power Hour (2026) |
+| Grant Fritchey | https://www.red-gate.com/blog/author/grant-fritchey/ | Redgate author page. SQL Cruise Alaska 2017 |
+| Bob Ward | http://linkedin.com/in/bobwardms | LinkedIn. Microsoft. Greeted me by name at the PASS Summit 2019 expo |
 | Tim Ford | https://www.techoutbound.com/ | Tech Outbound. SQL Cruise Alaska 2017. Blog: https://thesqlagentman.com/ |
 
 ## Mentioned in posts without a confirmed link
 
-Ben Weissman, Bob Ward, Grant Fritchey, Deborah Melkin, Kevin Feasel, Tomislav Hlupić, Ivan Kesedzic, Jerry Nixon
+Tomislav Hlupić, Ivan Kesedzic, Jerry Nixon
