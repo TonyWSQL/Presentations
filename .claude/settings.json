@@ -2,6 +2,9 @@
   "permissions": {
     "allow": [
       "Edit(/.claude/skills/build-travel-post/**)"
+    ],
+    "deny": [
+      "Bash(git commit:*)"
     ]
   }
 }
