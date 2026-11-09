@@ -91,6 +91,7 @@ Posts are self-contained HTML snippets for Blogger's HTML editor. Key rules:
   - Give the row a `min-height` (e.g. 80px) and `box-sizing:border-box` so there's enough vertical room for the image before text content forces a larger height
   - The text block needs `padding-right` roughly matching the image's rendered width so it doesn't run under the image
   - Hidden until `src` resolves via `display:none` / `onload` / `onerror`
+  - Click-to-enlarge: each day image has `cursor:zoom-in` and an inline `onclick` that builds a fixed full-screen dark overlay (`z-index:99999`) holding the same `this.src` at `max-width:94vw;max-height:94vh;object-fit:contain`; clicking the overlay removes it. Copy the handler verbatim from `blogposts/travel-template.html`. Blogger's Compose view strips `onclick`, so posts must only be edited and published through the repo pipeline, never opened in Compose
   - Canonical example: `blogposts/travel/2026-10-nashville-to-pittsburgh.html`, Day 1 (Wednesday) card
 - Activity rows: flex layout with a colored circle icon + text
 - Icon circle colors by activity type:
